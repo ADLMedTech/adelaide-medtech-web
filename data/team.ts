@@ -56,7 +56,7 @@ export const team = [
     linkedin: "#",
   },
   {
-    name: "Lirri LastName",
+    name: "Lirri Das",
     role: "Media Officer",
     department: "Media",
     image: "/images/team/lirri.jpg",
