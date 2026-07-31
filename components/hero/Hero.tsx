@@ -45,7 +45,7 @@ export default function Hero() {
             
             <div className="mb-4 inline-flex rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 backdrop-blur-xl">
               <span className="text-sm font-medium text-violet-300">
-                14 – 17 August 2026 • Adelaide, SA
+                19 – 26 August 2026 • Adelaide, SA
               </span>
             </div>
 

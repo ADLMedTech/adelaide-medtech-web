@@ -834,11 +834,11 @@ const pillVariants = {
 };
 function Hero() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "0c55c43167276257e2bbf3bc74771b5900fc68ff75e043c3701db476e1e18894") {
+    if ($[0] !== "032dd4ca63e3bcce9c443e411368404b9e8b4f425e726488ff652f90fa16c94c") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "0c55c43167276257e2bbf3bc74771b5900fc68ff75e043c3701db476e1e18894";
+        $[0] = "032dd4ca63e3bcce9c443e411368404b9e8b4f425e726488ff652f90fa16c94c";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -880,7 +880,7 @@ function Hero() {
             className: "mb-4 inline-flex rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 backdrop-blur-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: "text-sm font-medium text-violet-300",
-                children: "14 – 17 August 2026 • Adelaide, SA"
+                children: "19 – 26 August 2026 • Adelaide, SA"
             }, void 0, false, {
                 fileName: "[project]/components/hero/Hero.tsx",
                 lineNumber: 91,
