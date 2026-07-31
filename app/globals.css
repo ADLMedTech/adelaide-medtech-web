@@ -1,24 +1,48 @@
 @import "tailwindcss";
 
 :root {
+  /* Premium black background */
   --background: #04050b;
   --surface: #090d1c;
   --card: rgba(255, 255, 255, 0.05);
 
+  /* Purple accents */
   --primary: #7c5cff;
   --secondary: #a78bfa;
+  --accent-purple: #8b5cf6;
+  --accent-light: #c4b5fd;
 
+  /* Text */
   --text: #ffffff;
   --muted: #a0aec0;
 
+  /* Shared borders */
   --border: rgba(255, 255, 255, 0.08);
+
+  /* Mouse movement values */
+  --mouse-x: 0px;
+  --mouse-y: 0px;
 }
 
+/* ========================================================= */
+/* Base Styles */
+/* ========================================================= */
+
 @layer base {
-  * {
+  *,
+  *::before,
+  *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 }
 
@@ -27,19 +51,44 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100vh;
+  margin: 0;
 
   background:
-  linear-gradient(
-  180deg,
-  #04050b 0%,
-  #050814 40%,
-  #060611 10%
-  );
+    radial-gradient(
+      circle at 15% 0%,
+      rgba(124, 92, 255, 0.08),
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 85% 100%,
+      rgba(6, 182, 212, 0.05),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #04050b 0%,
+      #050814 45%,
+      #060611 100%
+    );
 
   color: var(--text);
   font-family: var(--font-inter);
+}
+
+/*
+ * Contains wide animated elements inside the page.
+ * This prevents galleries, marquees and background effects
+ * from changing the width of the website.
+ */
+main {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1,
@@ -48,16 +97,20 @@ h3,
 h4,
 h5,
 h6 {
+  color: #ffffff;
   font-family: var(--font-space);
   letter-spacing: -0.03em;
 }
 
 ::selection {
-  background: #7c5cff;
+  background: var(--primary);
   color: white;
 }
 
-img {
+img,
+svg,
+video,
+canvas {
   display: block;
   max-width: 100%;
 }
@@ -68,14 +121,23 @@ a {
 }
 
 button {
+  color: inherit;
   font: inherit;
   cursor: pointer;
 }
 
+/* ========================================================= */
+/* Shared Visual Styles */
+/* ========================================================= */
+
 .glass {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.18);
 }
 
 .glow {
@@ -83,67 +145,163 @@ button {
 }
 
 .section {
+  width: 100%;
+  max-width: 100%;
   padding: 140px 0;
+  overflow-x: clip;
 }
 
 @utility container {
+  width: 100%;
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 32px;
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, #ffffff, #b89cff);
+/* White and purple heading gradient */
+.heading-gradient {
+  background: linear-gradient(
+    135deg,
+    #ffffff 15%,
+    #d8ccff 65%,
+    #8b5cf6 100%
+  );
+
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
+/* White and purple text gradient */
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #b89cff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background grid */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    );
+
   background-size: 60px 60px;
 }
 
-/* ========================= */
+/* ========================================================= */
 /* Marquee Animations */
-/* ========================= */
+/* ========================================================= */
 
 @keyframes marquee {
   from {
-    transform: translateX(0%);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 45s linear infinite;
-  will-change: transform;
-}
-
+.animate-marquee,
 .animate-marquee-reverse {
   display: flex;
   width: max-content;
-  animation: marquee 45s linear infinite reverse;
+  min-width: max-content;
   will-change: transform;
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee 45s linear infinite reverse;
+}
+
+/* Apply this class to the parent of a marquee */
+.marquee-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+  contain: layout paint;
 }
 
 /* ========================================================= */
 /* Floating Background Animations */
 /* ========================================================= */
 
-:root {
-  --mouse-x: 0px;
-  --mouse-y: 0px;
+@keyframes floatSlow {
+  0% {
+    transform: translate(-50%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -35px) scale(1.08);
+  }
+
+  100% {
+    transform: translate(-50%, 0) scale(1);
+  }
 }
 
-/* Existing glow animation */
+@keyframes floatMedium {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatFast {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 18s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatMedium 24s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: floatFast 20s ease-in-out infinite;
+}
+
+/* ========================================================= */
+/* Premium Background Glow */
+/* ========================================================= */
 
 @keyframes glowFloat {
   0% {
@@ -167,48 +325,47 @@ button {
 /* Floating Orbs */
 /* ========================================================= */
 
-.orb{
-position:absolute;
-border-radius:9999px;
-filter:blur(120px);
-opacity:.22;
-pointer-events:none;
-will-change:transform;
+.orb {
+  position: absolute;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.22;
+  pointer-events: none;
+  will-change: transform;
+  animation: orbFloat 24s ease-in-out infinite;
 }
 
 .orb1 {
+  top: 5%;
+  left: -180px;
+
   width: 460px;
   height: 460px;
 
   background: #8b5cf6;
-
-  top: 5%;
-  left: -180px;
-
   animation-duration: 22s;
 }
 
 .orb2 {
+  top: 38%;
+  right: -150px;
+
   width: 380px;
   height: 380px;
 
   background: #10b981;
-
-  right: -150px;
-  top: 38%;
-
   animation-duration: 28s;
 }
 
 .orb3 {
+  bottom: -150px;
+  left: 35%;
+
   width: 340px;
   height: 340px;
 
   background: #06b6d4;
-
-  left: 35%;
-  bottom: -150px;
-
   animation-duration: 24s;
 }
 
@@ -220,7 +377,7 @@ will-change:transform;
         calc(var(--mouse-y) * 0.15),
         0
       )
-      translate(0px, 0px)
+      translate(0, 0)
       scale(1);
   }
 
@@ -264,112 +421,167 @@ will-change:transform;
         calc(var(--mouse-y) * 0.15),
         0
       )
-      translate(0px, 0px)
+      translate(0, 0)
       scale(1);
   }
 }
 
-/* =================================================== */
+/* ========================================================= */
 /* Premium Aurora Background */
-/* =================================================== */
+/* ========================================================= */
 
-.aurora{
-position:absolute;
-border-radius:9999px;
-filter:blur(170px);
-opacity:.18;
-mix-blend-mode:screen;
-animation:auroraFloat 18s ease-in-out infinite alternate;
-will-change:transform;
+.aurora {
+  position: absolute;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(170px);
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  will-change: transform;
+  animation: auroraFloat 18s ease-in-out infinite alternate;
 }
 
-.aurora-purple{
+.aurora-purple {
+  top: -150px;
+  left: -250px;
 
-width:900px;
-height:900px;
+  width: 900px;
+  height: 900px;
 
-background:#8b5cf6;
-
-left:-250px;
-top:-150px;
-
+  background: #8b5cf6;
 }
 
-.aurora-emerald{
+.aurora-emerald {
+  top: 25%;
+  right: -180px;
 
-width:700px;
-height:700px;
+  width: 700px;
+  height: 700px;
 
-background:#10b981;
-
-right:-180px;
-top:25%;
-
-animation-delay:6s;
-
+  background: #10b981;
+  animation-delay: 6s;
 }
 
-.aurora-cyan{
+.aurora-cyan {
+  bottom: -250px;
+  left: 35%;
 
-width:800px;
-height:800px;
+  width: 800px;
+  height: 800px;
 
-background:#06b6d4;
-
-left:35%;
-bottom:-250px;
-
-animation-delay:12s;
-
+  background: #06b6d4;
+  animation-delay: 12s;
 }
 
-@keyframes auroraFloat{
+@keyframes auroraFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 
-0%{
+  25% {
+    transform: translate3d(70px, -50px, 0) scale(1.08);
+  }
 
-transform:
-translate(0px,0px)
-scale(1);
+  50% {
+    transform: translate3d(-60px, 35px, 0) scale(1.15);
+  }
 
+  75% {
+    transform: translate3d(40px, 70px, 0) scale(1.05);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
 }
 
-25%{
+/* ========================================================= */
+/* 3D Card Utilities */
+/* ========================================================= */
 
-transform:
-translate(70px,-50px)
-scale(1.08);
-
-}
-
-50%{
-
-transform:
-translate(-60px,35px)
-scale(1.15);
-
-}
-
-75%{
-
-transform:
-translate(40px,70px)
-scale(1.05);
-
-}
-
-100%{
-
-transform:
-translate(0px,0px)
-scale(1);
-
-}
-
-}
 @layer utilities {
-  .perspective { perspective: 1000px; }
-  .preserve-3d { transform-style: preserve-3d; }
-  .backface-hidden { backface-visibility: hidden; }
-  .rotate-y-180 { transform: rotateY(180deg); }
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 }
 
+/* ========================================================= */
+/* Mobile Adjustments */
+/* ========================================================= */
+
+@media (max-width: 639px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .orb1 {
+    left: -140px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .orb2 {
+    right: -120px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .orb3 {
+    bottom: -100px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .aurora-purple {
+    left: -220px;
+    width: 480px;
+    height: 480px;
+  }
+
+  .aurora-emerald {
+    right: -210px;
+    width: 420px;
+    height: 420px;
+  }
+
+  .aurora-cyan {
+    left: 15%;
+    width: 440px;
+    height: 440px;
+  }
+}
+
+/* ========================================================= */
+/* Reduced Motion */
+/* ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .animate-float-slow,
+  .animate-float-medium,
+  .animate-float-fast,
+  .animate-glow,
+  .orb,
+  .aurora {
+    animation: none;
+  }
+}

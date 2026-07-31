@@ -609,10 +609,16 @@
     display: none !important;
   }
 
-  * {
+  *, :before, :after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
   }
 }
 
@@ -5210,8 +5216,17 @@ body {
   min-height: 100vh;
   color: var(--text);
   font-family: var(--font-inter);
-  background: linear-gradient(#04050b 0%, #050814 40%, #060611 10%);
-  overflow-x: hidden;
+  background: linear-gradient(#04050b 0%, #050814 40%, #060611 100%);
+  margin: 0;
+  position: relative;
+}
+
+main {
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
