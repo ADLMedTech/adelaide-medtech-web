@@ -33,7 +33,7 @@ export default function Home() {
         <Gallery />
         
         {/* --- SECONDARY INFO --- */}
-        <PrizePool />
+
         <Winners />
 
         {/* --- MORE NAV SECTIONS --- */}
@@ -54,4 +54,5 @@ export default function Home() {
 /*
         <FeatureCards />
         <Audience />
+        <PrizePool />
 */

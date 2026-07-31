@@ -1,48 +1,47 @@
 "use client";
 
-import { BrainCircuit, HeartPulse, Leaf, Rocket } from "lucide-react";
+import { Leaf, Stethoscope, Accessibility, Brain } from "lucide-react";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
 
 const themes = [
   {
-    icon: BrainCircuit,
-    title: "AI & Digital Health",
-    description: "Harness AI, machine learning and digital tools to improve healthcare delivery and patient outcomes.",
-    iconHover: "group-hover:text-white",
-    badgeHover: "group-hover:bg-white/15",
-    boxHover: "hover:bg-white/[0.04]",
-  },
-  {
-    icon: HeartPulse,
-    title: "Accessibility & Equity",
-    description: "Design solutions that make healthcare more inclusive, equitable and accessible for every community.",
-    iconHover: "group-hover:text-rose-400",
-    badgeHover: "group-hover:bg-rose-500/15",
-    boxHover: "hover:bg-rose-500/[0.06]",
-  },
-  {
     icon: Leaf,
-    title: "Sustainable Healthcare",
+    title: "Sustainability",
     description: "Reduce waste, improve efficiency and create environmentally sustainable healthcare systems.",
     iconHover: "group-hover:text-emerald-400",
     badgeHover: "group-hover:bg-emerald-500/15",
     boxHover: "hover:bg-emerald-500/[0.06]",
   },
   {
-    icon: Rocket,
-    title: "Open Innovation",
-    description: "Have an incredible healthcare idea that doesn't fit another stream? Build it here.",
+    icon: Stethoscope,
+    title: "Medical Technology",
+    description: "Develop cutting-edge medical devices and digital tools to enhance patient care and clinical outcomes.",
+    iconHover: "group-hover:text-blue-400",
+    badgeHover: "group-hover:bg-blue-500/15",
+    boxHover: "hover:bg-blue-500/[0.06]",
+  },
+  {
+    icon: Accessibility,
+    title: "Accessibility",
+    description: "Design solutions that make healthcare more inclusive, equitable and accessible for every community.",
     iconHover: "group-hover:text-amber-400",
     badgeHover: "group-hover:bg-amber-500/15",
     boxHover: "hover:bg-amber-500/[0.06]",
+  },
+  {
+    icon: Brain,
+    title: "Mental Health & Lifestyle",
+    description: "Create tools and platforms that support psychological well-being and promote healthier lifestyle choices.",
+    iconHover: "group-hover:text-rose-400",
+    badgeHover: "group-hover:bg-rose-500/15",
+    boxHover: "hover:bg-rose-500/[0.06]",
   },
 ];
 
 export default function Themes() {
   return (
     <section
-      id="themes"
-      /* Removed h-screen and replaced with standard vertical padding */
+      id="streams"
       className="relative flex w-full flex-col py-16 sm:py-24"
     >
       <BackgroundGlow colour="violet" position="center" />
@@ -74,7 +73,6 @@ export default function Themes() {
         <div className="relative">
           <div className="absolute inset-0 -z-10 rounded-[32px] bg-gradient-to-br from-violet-600/15 via-transparent to-indigo-500/10 blur-2xl" />
 
-          {/* Added responsive grid logic for a cleaner look */}
           <div className="glass grid grid-cols-1 divide-y divide-white/10 rounded-[32px] border border-white/10 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 lg:divide-x">
             {themes.map((theme) => (
               <div
@@ -90,9 +88,12 @@ export default function Themes() {
                   />
                 </div>
 
-                <h3 className="mt-6 text-xl font-bold lg:text-2xl">
-                  {theme.title}
-                </h3>
+                {/* Fixed height wrapper for alignment fix */}
+                <div className="mt-6 flex min-h-[4rem] items-center justify-center">
+                  <h3 className="text-xl font-bold leading-tight lg:text-2xl">
+                    {theme.title}
+                  </h3>
+                </div>
 
                 <p className="mt-3 text-sm leading-6 text-slate-400">
                   {theme.description}

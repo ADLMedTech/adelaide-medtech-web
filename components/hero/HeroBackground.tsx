@@ -16,7 +16,7 @@ export default function HeroBackground() {
           duration: 14,
           repeat: Infinity,
         }}
-        className="absolute -top-52 left-0 h-[700px] w-[700px] rounded-full bg-violet-700/20 blur-[140px]"
+        className="absolute -top-52 left-0 h-[700px] w-[700px] rounded-full bg-emerald-500/20 blur-[140px]"
       />
 
       <motion.div
@@ -28,7 +28,7 @@ export default function HeroBackground() {
           duration: 18,
           repeat: Infinity,
         }}
-        className="absolute right-0 top-60 h-[500px] w-[500px] rounded-full bg-indigo-500/20 blur-[120px]"
+        className="absolute right-0 top-60 h-[500px] w-[500px] rounded-full bg-teal-600/20 blur-[120px]"
       />
     </>
   );

@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #04050b;
-  --surface: #090d1c;
+  /* Deep Navy background from logo */
+  --background: #0f1322;
+  --surface: #171c30;
   --card: rgba(255, 255, 255, 0.05);
 
-  --primary: #7c5cff;
-  --secondary: #a78bfa;
+  /* Leaf/Medical green accents from logo */
+  --primary: #5cb87a;
+  --secondary: #8edfa8;
 
   --text: #ffffff;
-  --muted: #a0aec0;
+  --muted: #94a3b8;
 
   --border: rgba(255, 255, 255, 0.08);
 }
@@ -32,12 +34,12 @@ body {
   background:
     radial-gradient(
       circle at top,
-      rgba(124, 92, 255, 0.2),
+      rgba(92, 184, 122, 0.15), /* Green glow */
       transparent 35%
     ),
     radial-gradient(
       circle at bottom right,
-      rgba(70, 30, 160, 0.15),
+      rgba(30, 45, 90, 0.2), /* Navy blue glow */
       transparent 45%
     ),
     var(--background);
@@ -58,7 +60,7 @@ h6 {
 }
 
 ::selection {
-  background: #7c5cff;
+  background: var(--primary);
   color: white;
 }
 
@@ -84,7 +86,7 @@ button {
 }
 
 .glow {
-  box-shadow: 0 0 80px rgba(124, 92, 255, 0.22);
+  box-shadow: 0 0 80px rgba(92, 184, 122, 0.22);
 }
 
 .section {
@@ -98,7 +100,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #ffffff, #b89cff);
+  background: linear-gradient(90deg, #ffffff, var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -142,51 +144,39 @@ button {
 /* ---------- Floating Background Glows ---------- */
 
 @keyframes floatSlow {
-
   0% {
     transform: translate(-50%, 0px) scale(1);
   }
-
   50% {
     transform: translate(-50%, -35px) scale(1.08);
   }
-
   100% {
     transform: translate(-50%, 0px) scale(1);
   }
-
 }
 
 @keyframes floatMedium {
-
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(30px);
   }
-
   100% {
     transform: translateY(0px);
   }
-
 }
 
 @keyframes floatFast {
-
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(-25px);
   }
-
   100% {
     transform: translateY(0px);
   }
-
 }
 
 .animate-float-slow {
@@ -207,19 +197,14 @@ button {
   0% {
     transform: translateY(0px) scale(1);
   }
-
   50% {
     transform: translateY(-35px) scale(1.08);
   }
-
   100% {
     transform: translateY(0px) scale(1);
   }
 }
 
 .animate-glow {
-
-  animation:
-    glowFloat 18s ease-in-out infinite;
-
+  animation: glowFloat 18s ease-in-out infinite;
 }

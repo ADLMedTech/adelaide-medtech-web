@@ -2,28 +2,28 @@ export const winners = [
   {
     year: "2025",
     award: "Champion",
-    project: "MedAI",
+    project: "Medilink",
     description:
       "An AI-powered clinical decision support platform helping healthcare professionals identify high-risk patients earlier.",
     image: "/images/winners/2025.jpg",
     team: [
-      "Student One",
-      "Student Two",
-      "Student Three",
-      "Student Four",
+      "Vedant Puri",
+      "Angelina Rajic",
+      "Magdalina Rajic",
+      "Kelvin Ang",
+      "Arunya Movva",
     ],
   },
   {
-    year: "2024",
-    award: "Champion",
-    project: "HealthBridge",
+    year: "2025",
+    award: "Runner-Up",
+    project: "Visionary",
     description:
-      "Improving healthcare accessibility through an intuitive digital platform connecting patients with care providers.",
-    image: "/images/winners/2024.jpg",
+      "Improving healthcare accessibility through an optical device paired with an intuitive digital platform allowing patients to self-monitor their eye health and connect with healthcare professionals remotely.",
+    image: "/images/winners/2025.jpg",
     team: [
-      "Student One",
-      "Student Two",
-      "Student Three",
+      "Noel Modi",
+      "Adi Polara",,
     ],
   },
 ];

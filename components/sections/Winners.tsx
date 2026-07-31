@@ -2,23 +2,50 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { winners } from "@/data/winners";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
+
+const winnersData = [
+  {
+    year: "2025",
+    award: "Champion",
+    project: "Medilink",
+    description:
+      "An AI-powered clinical decision support platform helping healthcare professionals identify high-risk patients earlier.",
+    image: "/images/winners/2025-2.jpg",
+    team: [
+      "Vedant Puri",
+      "Angelina Rajic",
+      "Magdalina Rajic",
+      "Kelvin Ang",
+      "Arunya Movva",
+    ],
+  },
+  {
+    year: "2025",
+    award: "Runner-Up",
+    project: "Visionary",
+    description:
+      "Improving healthcare accessibility through an optical device paired with an intuitive digital platform allowing patients to self-monitor their eye health and connect with healthcare professionals remotely.",
+    image: "/images/winners/2025-1.jpg",
+    team: ["Noel Modi", "Adi Polara"],
+  },
+];
 
 export default function Winners() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const active = winners[activeIndex];
+  const active = winnersData[activeIndex];
 
   return (
     <section
       id="winners"
-      className="relative flex h-screen flex-col justify-center overflow-hidden py-10"
+      className="relative flex w-full flex-col justify-center px-6 py-16 sm:py-24 lg:px-12"
     >
       <BackgroundGlow colour="emerald" position="center" />
-      <div className="container mx-auto flex h-full flex-col justify-center px-6">
+      
+      <div className="container mx-auto flex w-full max-w-7xl flex-col justify-center">
         {/* Heading */}
-        <div className="mx-auto flex-shrink-0 max-w-3xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.4em] text-violet-400">
+        <div className="mx-auto max-w-3xl flex-shrink-0 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.4em] text-emerald-400">
             Past Winners
           </p>
 
@@ -28,65 +55,66 @@ export default function Winners() {
 
           <p className="mt-4 text-base leading-7 text-slate-400 lg:text-lg">
             Every year teams build ideas with the potential to improve
-            healthcare. Here are just a few examples.
+            healthcare. Here are the top projects from 2025.
           </p>
         </div>
 
-        {/* Year switcher */}
-        <div className="mx-auto mt-8 flex flex-shrink-0 flex-wrap justify-center gap-3">
-          {winners.map((winner, index) => (
+        {/* Switcher */}
+        <div className="mx-auto mt-10 flex flex-shrink-0 flex-wrap justify-center gap-4">
+          {winnersData.map((winner, index) => (
             <button
-              key={winner.year}
+              key={winner.award}
               onClick={() => setActiveIndex(index)}
-              className={`rounded-full border px-6 py-2.5 text-sm font-semibold transition-all duration-300 ${
+              className={`rounded-full border px-8 py-3 text-sm font-semibold transition-all duration-300 ${
                 index === activeIndex
-                  ? "border-green-500/50 bg-green-600 text-white shadow-[0_0_25px_rgba(124,92,255,.4)]"
+                  ? "border-emerald-500/50 bg-emerald-600 text-white shadow-[0_0_25px_rgba(16,185,129,.4)]"
                   : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-white/20 hover:text-white"
               }`}
             >
-              {winner.year}
+              {winner.award}
             </button>
           ))}
         </div>
 
-        {/* Active winner showcase */}
-        <div className="relative mt-8 min-h-0 flex-1">
-          <div className="absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-violet-600/15 via-transparent to-indigo-500/10 blur-2xl" />
+        {/* Active showcase */}
+        <div className="relative mt-12 w-full">
+          <div className="absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-emerald-600/15 via-transparent to-teal-500/10 blur-2xl" />
 
-          <div className="glass grid h-full gap-8 overflow-hidden rounded-[40px] border border-white/10 p-6 lg:grid-cols-2 lg:p-8">
-            <div className="relative min-h-[180px] overflow-hidden rounded-[28px]">
+          <div className="glass grid gap-8 overflow-hidden rounded-[40px] border border-white/10 p-6 lg:grid-cols-2 lg:p-10">
+            
+            <div className="relative min-h-[300px] w-full overflow-hidden rounded-[28px] lg:min-h-[400px]">
               <Image
                 src={active.image}
                 alt={active.project}
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-              <span className="absolute bottom-4 left-4 inline-flex rounded-full bg-violet-600 px-4 py-1.5 text-xs font-semibold shadow-lg">
-                {active.year} Champion
+              <span className="absolute bottom-6 left-6 inline-flex rounded-full bg-emerald-600 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white shadow-lg">
+                {active.year} {active.award}
               </span>
             </div>
 
-            <div className="flex flex-col justify-center overflow-y-auto">
+            <div className="flex flex-col justify-center">
               <h3 className="text-3xl font-bold lg:text-4xl">
                 {active.project}
               </h3>
 
-              <p className="mt-4 text-sm leading-6 text-slate-400 lg:text-base lg:leading-7">
+              <p className="mt-5 text-base leading-relaxed text-slate-400 lg:text-lg">
                 {active.description}
               </p>
 
-              <div className="mt-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-violet-300">
+              <div className="mt-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-400">
                   Team Members
                 </p>
 
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 flex flex-wrap gap-3">
                   {active.team.map((member) => (
                     <span
                       key={member}
-                      className="rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-xs text-slate-300 lg:text-sm"
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-slate-300"
                     >
                       {member}
                     </span>
@@ -94,6 +122,7 @@ export default function Winners() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>

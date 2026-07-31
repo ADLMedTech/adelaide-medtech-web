@@ -53,7 +53,7 @@ export default function CTA() {
           <div className="relative z-10 mt-12 flex w-full flex-col gap-4 lg:mt-0 lg:w-[400px]">
             {[
               { icon: Users, stat: "350+", label: "Students Inspired" },
-              { icon: Trophy, stat: "$5K+", label: "Prize Pool" },
+              { icon: Trophy, stat: "$1K+", label: "Prize Pool + Startup Incubation" },
               { icon: Lightbulb, stat: "15+", label: "Industry Mentors" },
             ].map((item, i) => (
               <div

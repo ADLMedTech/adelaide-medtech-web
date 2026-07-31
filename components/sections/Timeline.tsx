@@ -8,36 +8,36 @@ const scheduleData = [
   {
     day: "Day 1",
     title: "Idea Generation",
-    date: "Wed 19 Aug 2026",
+    date: "Wed, 19 Aug 2026",
     time: "5:00pm - 8:00pm",
-    location: "AHMS G030",
+    location: "AHMS",
     locationDetails: "Adelaide Health and Medical Sciences Building",
     isFinal: false,
   },
   {
     day: "Day 2",
-    title: "Intellectual Property / Pitching Exercise",
-    date: "Thurs 20 Aug 2026",
-    time: "5:30pm - 8:00pm",
-    location: "AHMS 1059",
+    title: "Pitching and Intellectual Property Workshop",
+    date: "Thurs, 20 Aug 2026",
+    time: "5:00pm - 8:00pm",
+    location: "AHMS",
     locationDetails: "Adelaide Health and Medical Sciences Building",
     isFinal: false,
   },
   {
     day: "Day 3",
-    title: "Logo Designing / Prototyping",
-    date: "Sat 22 Aug 2026",
-    time: "5:30pm - 8:00pm",
-    location: "AHMS G030",
+    title: "Prototyping & Logo Designing",
+    date: "Mon, 24 Aug 2026",
+    time: "5:00pm - 8:00pm",
+    location: "AHMS",
     locationDetails: "Adelaide Health and Medical Sciences Building",
     isFinal: false,
   },
   {
     day: "Day 4",
     title: "Pitching & Awards Ceremony",
-    date: "Mon 24 Aug 2026",
+    date: "Wed, 26 Aug 2026",
     time: "3:00pm - 8:00pm",
-    location: "Nexus 10 Foyer",
+    location: "ThincLab",
     locationDetails: "North Terrace",
     isFinal: true,
   },
@@ -121,13 +121,32 @@ export default function Timeline() {
               </div>
 
               <a
-                href="https://www.addevent.com/blog/free-add-to-calendar-link-generator"
-                target="_blank"
-                rel="noreferrer"
-                className="group flex items-center gap-2 rounded-full border border-violet-500/40 bg-violet-500/10 px-6 py-3 text-sm font-semibold text-violet-300 backdrop-blur-sm transition-all duration-300 hover:bg-violet-500 hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.4)]"
+                href="/calendar/hackathon-2026.ics"
+                className="group relative flex flex-col items-center overflow-hidden rounded-full border border-violet-500/40 bg-violet-500/10 px-6 py-3 text-sm font-semibold text-violet-300 backdrop-blur-sm transition-all duration-300 hover:bg-violet-500 hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:rounded-3xl"
               >
-                <CalendarPlus className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
-                Save to Calendar
+                <div className="flex items-center gap-2">
+                  <CalendarPlus className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                  <span>Save to Calendar</span>
+                </div>
+
+                <div
+                  className="
+                    grid
+                    transition-all
+                    duration-300
+                    ease-out
+                    grid-rows-[0fr]
+                    opacity-0
+                    group-hover:grid-rows-[1fr]
+                    group-hover:opacity-100
+                  "
+                >
+                  <div className="overflow-hidden">
+                    <p className="mt-2 text-xs font-medium text-violet-100">
+                      Save all 4 days to your calendar
+                    </p>
+                  </div>
+                </div>
               </a>
             </div>
           )}

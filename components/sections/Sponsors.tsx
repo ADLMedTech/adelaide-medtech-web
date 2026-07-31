@@ -4,23 +4,25 @@ import Image from "next/image";
 
 const anchorPartners = [
   {
-    name: "University of Adelaide",
-    logo: "/sponsors/uoa.png",
-    role: "Host & Venue Partner",
+    name: "Evolution Surgical",
+    logo: "/sponsors/healthtranslation.png",
+    role: "Gold Sponsor",
   },
   {
-    name: "ThincLab",
-    logo: "/sponsors/thinclab.png",
-    role: "Startup Incubator Partner",
+    name: "Commission on Excellence and Innovation in Health",
+    logo: "/sponsors/evosurgical.png",
+    role: "Gold Sponsor",
   },
 ];
 
 const allSponsors = [
   "/sponsors/uoa.png",
+  "/sponsors/beyondIndia.png",
   "/sponsors/thinclab.png",
   "/sponsors/sahealth.png",
   "/sponsors/amt.png",
   "/sponsors/healthtranslation.png",
+  "/sponsors/evosurgical.png"
 ];
 
 export default function Sponsors() {
@@ -45,23 +47,25 @@ export default function Sponsors() {
           </p>
         </div>
 
-        {/* Anchor partners */}
-        <div className="mx-auto mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
+        {/* Anchor partners - Widened max-width and increased gaps */}
+        <div className="mx-auto mt-14 grid w-full max-w-5xl gap-6 md:gap-10 sm:grid-cols-2">
           {anchorPartners.map((partner) => (
             <div
               key={partner.name}
-              className="group flex flex-col items-center rounded-[28px] bg-white px-8 py-10 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-violet-500/20"
+              className="group flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-12 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/30"
             >
-              <div className="flex h-20 items-center justify-center">
+              <div className="flex h-24 items-center justify-center">
                 <Image
                   src={partner.logo}
-                  width={160}
-                  height={70}
+                  width={220}
+                  height={90}
                   alt={partner.name}
-                  className="max-h-16 w-auto object-contain"
+                  className="max-h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.3em] text-violet-600">
+              
+              {/* Updated to an actual gold color */}
+              <p className="mt-8 text-xs font-bold uppercase tracking-[0.3em] text-amber-500">
                 {partner.role}
               </p>
             </div>

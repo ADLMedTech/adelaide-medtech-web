@@ -9,7 +9,7 @@ const links = [
   { title: "About", href: "#about" },
   { title: "Timeline", href: "#timeline" },
   { title: "Themes", href: "#themes" },
-  { title: "Prizes", href: "#prizes" },
+  { title: "Team", href: "#team" },
   { title: "FAQs", href: "#faq" },
 ];
 
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Register - Nudged right */}
-        <div className="hidden lg:block -mr-6">
+        <div className="hidden lg:block -mr-3">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform" target="_blank" className="inline-flex h-10 min-w-[180px] items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-500 font-semibold text-white shadow-[0_0_35px_rgba(124,92,255,.45)] transition hover:scale-105">
             Register Now →
           </Link>

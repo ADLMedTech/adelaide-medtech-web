@@ -14,8 +14,8 @@ const stats = [
     label: "Prizes",
   },
   {
-    number: "4",
-    label: "Challenge Themes",
+    number: "4+",
+    label: "Years Running",
   },
 ];
 

@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Adelaide MedTech Hackathon//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Adelaide
+BEGIN:VEVENT
+UID:day1@amt
+DTSTAMP:20260728T100000Z
+ORGANIZER;CN=Adelaide MedTech Hackathon:mailto:adelaide.medtechhackathon@gmail.com
+DTSTART;TZID=Australia/Adelaide:20260819T170000
+DTEND;TZID=Australia/Adelaide:20260819T200000
+SUMMARY:Adelaide MedTech Hackathon 2026 – Day 1: Idea Generation
+LOCATION:Adelaide Health and Medical Sciences (AHMS), North Terrace, Adelaide SA 5000, Australia
+DESCRIPTION:🩺 Adelaide MedTech Hackathon 2026\n\nJoin students, innovators, clinicians and industry mentors over four exciting days to develop innovative healthcare solutions. Work in multidisciplinary teams, receive expert mentoring, learn startup and innovation skills, and pitch your idea for the chance to win prizes.\n\n🌐 Website: https://adelaidemedtech.com\n🎟 Register: https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform\n🍕 Dinner provided\n💰 Free event\n🎒 Bring your laptop and charger\n📧 Questions: adelaide.medtechhackathon@gmail.com\n\nToday's focus:\n- Meet your team\n- Brainstorm ideas\n- Validate your problem\n- Plan your solution
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Adelaide MedTech Hackathon 2026 – Day 1: Idea Generation starts in 1 hour
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:day2@amt
+DTSTAMP:20260728T100000Z
+ORGANIZER;CN=Adelaide MedTech Hackathon:mailto:adelaide.medtechhackathon@gmail.com
+DTSTART;TZID=Australia/Adelaide:20260820T170000
+DTEND;TZID=Australia/Adelaide:20260820T200000
+SUMMARY:Day 2: Pitching & Intellectual Property Workshop
+LOCATION:Adelaide Health and Medical Sciences (AHMS), North Terrace, Adelaide SA 5000, Australia
+DESCRIPTION:🩺 Adelaide MedTech Hackathon 2026\n\nJoin students, innovators, clinicians and industry mentors over four exciting days to develop innovative healthcare solutions. Work in multidisciplinary teams, receive expert mentoring, learn startup and innovation skills, and pitch your idea for the chance to win prizes.\n\n🌐 Website: https://adelaidemedtech.com\n🎟 Register: https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform\n🍕 Dinner provided\n💰 Free event\n🎒 Bring your laptop and charger\n📧 Questions: adelaide.medtechhackathon@gmail.com\n\nToday's focus:\n- Develop your pitch\n- Learn IP fundamentals\n- Mentor feedback\n- Refine your concept
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Day 2: Pitching & Intellectual Property Workshop starts in 1 hour
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:day3@amt
+DTSTAMP:20260728T100000Z
+ORGANIZER;CN=Adelaide MedTech Hackathon:mailto:adelaide.medtechhackathon@gmail.com
+DTSTART;TZID=Australia/Adelaide:20260824T170000
+DTEND;TZID=Australia/Adelaide:20260824T200000
+SUMMARY:Day 3: Prototype & Logo Designing
+LOCATION:Adelaide Health and Medical Sciences (AHMS), North Terrace, Adelaide SA 5000, Australia
+DESCRIPTION:🩺 Adelaide MedTech Hackathon 2026\n\nJoin students, innovators, clinicians and industry mentors over four exciting days to develop innovative healthcare solutions. Work in multidisciplinary teams, receive expert mentoring, learn startup and innovation skills, and pitch your idea for the chance to win prizes.\n\n🌐 Website: https://adelaidemedtech.com\n🎟 Register: https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform\n🍕 Dinner provided\n💰 Free event\n🎒 Bring your laptop and charger\n📧 Questions: adelaide.medtechhackathon@gmail.com\n\nToday's focus:\n- Build your prototype\n- Design your branding\n- Test and iterate\n- Prepare your presentation
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Day 3: Prototype & Logo Designing starts in 1 hour
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:day4@amt
+DTSTAMP:20260728T100000Z
+ORGANIZER;CN=Adelaide MedTech Hackathon:mailto:adelaide.medtechhackathon@gmail.com
+DTSTART;TZID=Australia/Adelaide:20260826T150000
+DTEND;TZID=Australia/Adelaide:20260826T200000
+SUMMARY:Day 4: Final Pitching & Awards Ceremony
+LOCATION:ThinkLab, North Terrace, Adelaide SA 5000, Australia
+DESCRIPTION:🩺 Adelaide MedTech Hackathon 2026\n\nJoin students, innovators, clinicians and industry mentors over four exciting days to develop innovative healthcare solutions. Work in multidisciplinary teams, receive expert mentoring, learn startup and innovation skills, and pitch your idea for the chance to win prizes.\n\n🌐 Website: https://adelaidemedtech.com\n🎟 Register: https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform\n🍕 Dinner provided\n💰 Free event\n🎒 Bring your laptop and charger\n📧 Questions: adelaide.medtechhackathon@gmail.com\n\nToday's focus:\n- Final presentations\n- Judging\n- Networking\n- Awards ceremony
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Day 4: Final Pitching & Awards Ceremony starts in 1 hour
+END:VALARM
+END:VEVENT
+END:VCALENDAR
