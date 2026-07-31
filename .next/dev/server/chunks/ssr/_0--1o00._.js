@@ -12,7 +12,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.mjs [app-ssr] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -42,125 +45,193 @@ const links = [
 ];
 function Navbar() {
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Prevent background scrolling when the mobile menu is open
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return ()=>{
+            document.body.style.overflow = "unset";
+        };
+    }, [
+        isOpen
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "fixed top-6 left-0 right-0 z-50 flex justify-center px-6",
+        className: "fixed left-0 right-0 top-4 z-50 flex w-full justify-center px-4 sm:top-6 sm:px-6 lg:px-8",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "glass flex h-20 w-full max-w-7xl items-center justify-between rounded-2xl border border-white/10 px-8 shadow-[0_20px_80px_rgba(0,0,0,.45)] backdrop-blur-2xl",
+                className: "glass flex h-16 w-full max-w-7xl items-center justify-between rounded-2xl border border-white/10 px-5 shadow-[0_20px_80px_rgba(0,0,0,.45)] backdrop-blur-2xl sm:h-20 sm:px-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
-                        className: "flex items-center gap-4 -ml-7",
+                        className: "flex items-center gap-4 lg:-ml-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             src: "/logos/logo-dark.png",
                             alt: "Adelaide MedTech Hackathon",
                             width: 150,
                             height: 80,
-                            priority: true
+                            priority: true,
+                            className: "h-auto w-[120px] object-contain sm:w-[150px]"
                         }, void 0, false, {
                             fileName: "[project]/components/layout/Navbar.tsx",
-                            lineNumber: 25,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/layout/Navbar.tsx",
-                        lineNumber: 24,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "hidden lg:flex items-center gap-8",
+                        className: "hidden items-center gap-8 lg:flex",
                         children: links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: link.href,
                                 className: "text-[15px] font-medium text-white/70 transition hover:text-white",
                                 children: link.title
                             }, link.title, false, {
                                 fileName: "[project]/components/layout/Navbar.tsx",
-                                lineNumber: 31,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/layout/Navbar.tsx",
-                        lineNumber: 29,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "hidden lg:block -mr-3",
+                        className: "hidden lg:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform",
                             target: "_blank",
-                            className: "inline-flex h-10 min-w-[180px] items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-500 font-semibold text-white shadow-[0_0_35px_rgba(124,92,255,.45)] transition hover:scale-105",
+                            className: "inline-flex h-10 min-w-[180px] items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-500 font-semibold text-white shadow-[0_0_35px_rgba(16,185,129,.45)] transition hover:scale-105",
                             children: "Register Now →"
                         }, void 0, false, {
                             fileName: "[project]/components/layout/Navbar.tsx",
-                            lineNumber: 39,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/layout/Navbar.tsx",
-                        lineNumber: 38,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setIsOpen(!isOpen),
                         className: "rounded-xl p-2 text-white transition hover:bg-white/10 lg:hidden",
-                        children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                            size: 28
+                        "aria-label": "Toggle Menu",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                            mode: "wait",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    rotate: -90
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    rotate: 0
+                                },
+                                exit: {
+                                    opacity: 0,
+                                    rotate: 90
+                                },
+                                transition: {
+                                    duration: 0.15
+                                },
+                                children: isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                    size: 26
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Navbar.tsx",
+                                    lineNumber: 78,
+                                    columnNumber: 25
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+                                    size: 26
+                                }, void 0, false, {
+                                    fileName: "[project]/components/layout/Navbar.tsx",
+                                    lineNumber: 78,
+                                    columnNumber: 43
+                                }, this)
+                            }, isOpen ? "close" : "open", false, {
+                                fileName: "[project]/components/layout/Navbar.tsx",
+                                lineNumber: 71,
+                                columnNumber: 13
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/layout/Navbar.tsx",
-                            lineNumber: 46,
-                            columnNumber: 21
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
-                            size: 28
-                        }, void 0, false, {
-                            fileName: "[project]/components/layout/Navbar.tsx",
-                            lineNumber: 46,
-                            columnNumber: 39
+                            lineNumber: 70,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/layout/Navbar.tsx",
-                        lineNumber: 45,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/layout/Navbar.tsx",
-                lineNumber: 21,
+                lineNumber: 34,
                 columnNumber: 7
             }, this),
-            isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "glass absolute top-28 left-6 right-6 z-40 flex flex-col gap-4 rounded-2xl border border-white/10 p-8 shadow-[0_20px_80px_rgba(0,0,0,.45)] backdrop-blur-2xl lg:hidden",
-                children: [
-                    links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            href: link.href,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                children: isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                    initial: {
+                        opacity: 0,
+                        y: -20,
+                        scale: 0.95
+                    },
+                    animate: {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1
+                    },
+                    exit: {
+                        opacity: 0,
+                        y: -10,
+                        scale: 0.95
+                    },
+                    transition: {
+                        duration: 0.2,
+                        ease: "easeOut"
+                    },
+                    className: "glass absolute left-4 right-4 top-24 z-40 flex flex-col gap-2 rounded-2xl border border-white/10 p-6 shadow-[0_20px_80px_rgba(0,0,0,.6)] backdrop-blur-3xl sm:left-6 sm:right-6 sm:top-28 sm:p-8 lg:hidden",
+                    children: [
+                        links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                href: link.href,
+                                onClick: ()=>setIsOpen(false),
+                                className: "flex items-center rounded-xl px-4 py-3 text-lg font-medium text-white/80 transition-colors hover:bg-white/5 hover:text-emerald-400",
+                                children: link.title
+                            }, link.title, false, {
+                                fileName: "[project]/components/layout/Navbar.tsx",
+                                lineNumber: 95,
+                                columnNumber: 15
+                            }, this)),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            href: "https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform",
+                            target: "_blank",
                             onClick: ()=>setIsOpen(false),
-                            className: "text-lg font-medium text-white/80 hover:text-white",
-                            children: link.title
-                        }, link.title, false, {
+                            className: "mt-4 inline-flex h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-emerald-600 to-teal-500 font-semibold text-white shadow-[0_0_20px_rgba(16,185,129,.3)] transition-transform active:scale-95",
+                            children: "Register Now"
+                        }, void 0, false, {
                             fileName: "[project]/components/layout/Navbar.tsx",
-                            lineNumber: 54,
+                            lineNumber: 104,
                             columnNumber: 13
-                        }, this)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        href: "https://docs.google.com/forms/d/e/1FAIpQLSfzuxnYnfdkLhnjFOCKnJlDzZ1v4SgjJFXPof3jKiJ0IE3-Mw/viewform",
-                        target: "_blank",
-                        onClick: ()=>setIsOpen(false),
-                        className: "mt-4 inline-flex h-12 w-full items-center justify-center rounded-full bg-violet-600 font-semibold text-white shadow-lg",
-                        children: "Register Now"
-                    }, void 0, false, {
-                        fileName: "[project]/components/layout/Navbar.tsx",
-                        lineNumber: 63,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/layout/Navbar.tsx",
+                    lineNumber: 87,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/components/layout/Navbar.tsx",
-                lineNumber: 52,
-                columnNumber: 9
+                lineNumber: 85,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/layout/Navbar.tsx",
-        lineNumber: 20,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }
@@ -178,7 +249,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 function HeroBackground() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "pointer-events-none absolute inset-0 overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 grid-bg opacity-40"
@@ -191,12 +263,12 @@ function HeroBackground() {
                 animate: {
                     x: [
                         0,
-                        60,
+                        40,
                         0
                     ],
                     y: [
                         0,
-                        40,
+                        30,
                         0
                     ]
                 },
@@ -204,7 +276,7 @@ function HeroBackground() {
                     duration: 14,
                     repeat: Infinity
                 },
-                className: "absolute -top-52 left-0 h-[700px] w-[700px] rounded-full bg-emerald-500/20 blur-[140px]"
+                className: "absolute -left-[20%] -top-32 h-[400px] w-[400px] rounded-full bg-emerald-500/20 blur-[100px] md:-left-20 md:-top-52 md:h-[700px] md:w-[700px] md:blur-[140px]"
             }, void 0, false, {
                 fileName: "[project]/components/hero/HeroBackground.tsx",
                 lineNumber: 10,
@@ -214,12 +286,12 @@ function HeroBackground() {
                 animate: {
                     x: [
                         0,
-                        -80,
+                        -50,
                         0
                     ],
                     y: [
                         0,
-                        60,
+                        40,
                         0
                     ]
                 },
@@ -227,14 +299,18 @@ function HeroBackground() {
                     duration: 18,
                     repeat: Infinity
                 },
-                className: "absolute right-0 top-60 h-[500px] w-[500px] rounded-full bg-teal-600/20 blur-[120px]"
+                className: "absolute -right-[20%] top-40 h-[300px] w-[300px] rounded-full bg-teal-600/20 blur-[80px] md:-right-20 md:top-60 md:h-[500px] md:w-[500px] md:blur-[120px]"
             }, void 0, false, {
                 fileName: "[project]/components/hero/HeroBackground.tsx",
                 lineNumber: 22,
                 columnNumber: 7
             }, this)
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "[project]/components/hero/HeroBackground.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
 }
 }),
 "[project]/components/hero/HeroStats.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -661,222 +737,276 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const anchorPartners = [
     {
         name: "Evolution Surgical",
-        logo: "/sponsors/healthtranslation.png",
+        logo: "/sponsors/evosurgical.png",
         role: "Gold Sponsor"
     },
     {
         name: "Commission on Excellence and Innovation in Health",
-        logo: "/sponsors/evosurgical.png",
+        logo: "/sponsors/healthtranslation.png",
         role: "Gold Sponsor"
     }
 ];
 const allSponsors = [
-    "/sponsors/uoa.png",
-    "/sponsors/beyondIndia.png",
-    "/sponsors/thinclab.png",
-    "/sponsors/sahealth.png",
-    "/sponsors/amt.png",
-    "/sponsors/healthtranslation.png",
-    "/sponsors/evosurgical.png"
+    {
+        name: "University of Adelaide",
+        logo: "/sponsors/uoa.png"
+    },
+    {
+        name: "Beyond India",
+        logo: "/sponsors/beyondIndia.png"
+    },
+    {
+        name: "ThincLab",
+        logo: "/sponsors/thinclab.png"
+    },
+    {
+        name: "SA Health",
+        logo: "/sponsors/sahealth.png"
+    },
+    {
+        name: "Adelaide Medical Technology",
+        logo: "/sponsors/amt.png"
+    },
+    {
+        name: "Health Translation SA",
+        logo: "/sponsors/healthtranslation.png"
+    },
+    {
+        name: "Evolution Surgical",
+        logo: "/sponsors/evosurgical.png"
+    }
 ];
 function Sponsors() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "sponsors",
-        className: "relative overflow-hidden py-28 lg:py-32",
+        className: "relative isolate w-full max-w-full overflow-x-clip py-16 sm:py-24 lg:py-32 [contain:layout_paint]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-6",
+            className: "mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mx-auto max-w-2xl text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mb-3 text-sm font-semibold uppercase tracking-[0.4em] text-violet-400",
+                            className: "mb-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-emerald-400 sm:text-sm sm:tracking-[0.4em]",
                             children: "Our Partners"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 34,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl font-bold leading-tight lg:text-5xl",
+                            className: "text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl",
                             children: [
                                 "Backed by Leaders in",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                    className: "hidden sm:block"
+                                }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 64,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "sm:hidden",
+                                    children: " "
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                    lineNumber: 65,
                                     columnNumber: 13
                                 }, this),
                                 "Health & Innovation"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 38,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mx-auto mt-5 text-base leading-7 text-slate-400 lg:text-lg",
-                            children: "Adelaide MedTech Hackathon is made possible by organisations committed to shaping the future of healthcare."
+                            className: "mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-400 sm:mt-5 sm:text-base sm:leading-7 lg:text-lg",
+                            children: "Made possible by organisations committed to shaping the future of healthcare."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 44,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 33,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mx-auto mt-14 grid w-full max-w-5xl gap-6 md:gap-10 sm:grid-cols-2",
+                    className: "mx-auto mt-9 grid w-full max-w-5xl grid-cols-2 gap-3 sm:mt-14 sm:gap-6 md:gap-10",
                     children: anchorPartners.map((partner)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "group flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-12 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/30",
+                            className: "group flex min-w-0 flex-col items-center justify-center rounded-[20px] bg-white px-2 py-6 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/20 sm:rounded-[28px] sm:px-6 sm:py-12",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex h-24 items-center justify-center",
+                                    className: "flex h-16 w-full items-center justify-center overflow-visible sm:h-28",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         src: partner.logo,
-                                        width: 220,
-                                        height: 90,
+                                        width: 300,
+                                        height: 130,
                                         alt: partner.name,
-                                        className: "max-h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                                        sizes: "(max-width: 639px) 140px, 280px",
+                                        className: "h-auto w-[140px] max-w-none object-contain transition-transform duration-500 group-hover:scale-105 sm:w-[280px]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Sponsors.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-8 text-xs font-bold uppercase tracking-[0.3em] text-amber-500",
+                                    className: "mt-4 text-[8px] font-bold uppercase tracking-[0.18em] text-amber-500 sm:mt-7 sm:text-xs sm:tracking-[0.3em]",
                                     children: partner.role
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, partner.name, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 53,
+                            lineNumber: 78,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
-                    fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 51,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-20",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-xs font-semibold uppercase tracking-[0.4em] text-slate-500",
-                            children: "In Partnership With"
-                        }, void 0, false, {
-                            fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative mt-8 overflow-hidden",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[var(--background)] to-transparent"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 82,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[var(--background)] to-transparent"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 83,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex animate-marquee gap-6",
-                                    children: allSponsors.concat(allSponsors).map((logo, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex h-24 w-48 flex-shrink-0 items-center justify-center rounded-2xl bg-white shadow-md transition-all hover:scale-105",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                src: logo,
-                                                width: 140,
-                                                height: 64,
-                                                alt: "",
-                                                className: "max-h-12 w-auto object-contain transition-transform hover:scale-110"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/sections/Sponsors.tsx",
-                                                lineNumber: 91,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, index, false, {
-                                            fileName: "[project]/components/sections/Sponsors.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 17
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 85,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 81,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
                     lineNumber: 76,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mx-auto mt-20 max-w-2xl rounded-[32px] border border-violet-500/20 bg-gradient-to-r from-violet-500/10 via-transparent to-indigo-500/10 p-10 text-center",
+                    className: "mt-14 sm:mt-20",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "text-2xl font-bold lg:text-3xl",
-                            children: "Interested in Sponsoring 2026?"
-                        }, void 0, false, {
-                            fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 106,
-                            columnNumber: 11
-                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mx-auto mt-3 max-w-md text-sm leading-6 text-slate-400 lg:text-base",
-                            children: "Join us in supporting the next generation of healthcare innovators, with packages available from Bronze to Gold."
+                            className: "text-center text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500 sm:text-xs sm:tracking-[0.4em]",
+                            children: "Supported By"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 109,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "mailto:adlmedtechhackathon.sponsorships@gmail.com",
-                            className: "mt-6 inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-500 px-8 text-sm font-semibold text-white shadow-[0_0_35px_rgba(124,92,255,.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_55px_rgba(124,92,255,.55)]",
-                            children: "Get in Touch →"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative mt-6 w-full max-w-full overflow-x-clip sm:mt-8 [contain:layout_paint]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[var(--background)] to-transparent sm:w-16 lg:w-24"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[var(--background)] to-transparent sm:w-16 lg:w-24"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                    lineNumber: 112,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "animate-marquee flex w-max min-w-max will-change-transform",
+                                    children: [
+                                        0,
+                                        1
+                                    ].map((copyIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            "aria-hidden": copyIndex === 1,
+                                            className: "flex shrink-0 gap-2.5 pr-2.5 sm:gap-4 sm:pr-4 lg:gap-6 lg:pr-6",
+                                            children: allSponsors.map((sponsor)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "group relative flex h-[62px] w-[112px] shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:scale-[1.03] sm:h-20 sm:w-40 sm:rounded-2xl lg:h-24 lg:w-48",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                        src: sponsor.logo,
+                                                        alt: copyIndex === 0 ? `${sponsor.name} logo` : "",
+                                                        fill: true,
+                                                        sizes: "(max-width: 639px) 112px, (max-width: 1023px) 160px, 192px",
+                                                        className: "object-contain p-2.5 transition-transform duration-300 group-hover:scale-105 sm:p-3"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/Sponsors.tsx",
+                                                        lineNumber: 127,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, `${copyIndex}-${sponsor.name}`, false, {
+                                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                                    lineNumber: 123,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, copyIndex, false, {
+                                            fileName: "[project]/components/sections/Sponsors.tsx",
+                                            lineNumber: 117,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 114,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 105,
+                    lineNumber: 102,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mx-auto mt-14 max-w-2xl rounded-[24px] border border-violet-500/30 bg-gradient-to-r from-violet-600/15 via-transparent to-purple-600/15 px-5 py-8 text-center shadow-[0_0_40px_rgba(139,92,246,0.1)] sm:mt-20 sm:rounded-[32px] sm:p-10",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "text-xl font-bold sm:text-2xl lg:text-3xl",
+                            children: "Interested in Sponsoring 2026?"
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/Sponsors.tsx",
+                            lineNumber: 146,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300 sm:text-base",
+                            children: "Support the next generation of healthcare innovators, with packages available from Bronze to Gold."
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/Sponsors.tsx",
+                            lineNumber: 150,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "mailto:adlmedtechhackathon.sponsorships@gmail.com",
+                            className: "mt-5 inline-flex h-10 items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 px-6 text-sm font-semibold text-white shadow-[0_0_35px_rgba(139,92,246,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_55px_rgba(139,92,246,0.6)] sm:mt-6 sm:h-11 sm:px-8",
+                            children: [
+                                "Get in Touch",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    "aria-hidden": "true",
+                                    className: "ml-2",
+                                    children: "→"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Sponsors.tsx",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/sections/Sponsors.tsx",
+                            lineNumber: 155,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/sections/Sponsors.tsx",
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/Sponsors.tsx",
-            lineNumber: 31,
+            lineNumber: 55,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/sections/Sponsors.tsx",
-        lineNumber: 30,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }
@@ -1989,72 +2119,90 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 "use client";
 ;
 ;
-// Dynamically generate all 74 image paths
-// Change '.jpg' here if your images are .png or .jpeg
 const row1 = Array.from({
     length: 37
-}, (_, i)=>`/images/gallery/gallery${i + 1}.jpg`);
+}, (_, index)=>`/images/gallery/gallery${index + 1}.jpg`);
 const row2 = Array.from({
     length: 37
-}, (_, i)=>`/images/gallery/gallery${i + 38}.jpg`);
+}, (_, index)=>`/images/gallery/gallery${index + 38}.jpg`);
 function GalleryRow({ images, reverse = false }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "overflow-hidden",
+        className: "relative w-full max-w-full overflow-x-clip [contain:layout_paint]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex w-max gap-8",
+            className: `flex w-max min-w-max will-change-transform [animation-duration:220s] sm:[animation-duration:280s] lg:[animation-duration:350s] ${reverse ? "[animation-direction:reverse]" : ""} motion-reduce:animate-none`,
             style: {
-                // Forces a much slower 350-second animation and handles the direction
-                animation: `marquee 350s linear infinite ${reverse ? "reverse" : "normal"}`
+                animationName: "marquee",
+                animationTimingFunction: "linear",
+                animationIterationCount: "infinite"
             },
             children: [
-                ...images,
-                ...images
-            ].map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative h-[280px] w-[420px] shrink-0 overflow-hidden rounded-[34px]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: image,
-                        alt: "Hackathon Gallery Image",
-                        fill: true,
-                        className: "object-cover transition duration-700 hover:scale-110"
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 31,
-                        columnNumber: 13
-                    }, this)
-                }, index, false, {
+                0,
+                1
+            ].map((copyIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    "aria-hidden": copyIndex === 1,
+                    className: "flex shrink-0 gap-2.5 pr-2.5 sm:gap-4 sm:pr-4 lg:gap-8 lg:pr-8",
+                    children: images.map((image, imageIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "group relative h-[130px] w-[195px] shrink-0 overflow-hidden rounded-[18px] border border-white/[0.07] bg-white/[0.03] shadow-lg shadow-black/10 sm:h-[190px] sm:w-[285px] sm:rounded-[24px] lg:h-[280px] lg:w-[420px] lg:rounded-[34px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    src: image,
+                                    alt: copyIndex === 0 ? `Adelaide MedTech Hackathon gallery image ${imageIndex + 1}` : "",
+                                    fill: true,
+                                    sizes: "(max-width: 639px) 195px, (max-width: 1023px) 285px, 420px",
+                                    quality: 75,
+                                    className: "object-cover transition-transform duration-700 group-hover:scale-105"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Gallery.tsx",
+                                    lineNumber: 45,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/15 to-transparent"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/Gallery.tsx",
+                                    lineNumber: 61,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, `${copyIndex}-${image}`, true, {
+                            fileName: "[project]/components/sections/Gallery.tsx",
+                            lineNumber: 41,
+                            columnNumber: 15
+                        }, this))
+                }, copyIndex, false, {
                     fileName: "[project]/components/sections/Gallery.tsx",
-                    lineNumber: 27,
+                    lineNumber: 35,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 19,
+            lineNumber: 23,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/sections/Gallery.tsx",
-        lineNumber: 18,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
 }
 function Gallery() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "gallery",
-        className: "overflow-hidden py-24",
+        className: "relative isolate w-full max-w-full overflow-x-clip py-16 sm:py-20 lg:py-24 [contain:layout_paint]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto mb-16 text-center",
+                className: "container mx-auto mb-10 px-6 text-center sm:mb-14 lg:mb-16",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mb-4 text-sm font-semibold uppercase tracking-[0.45em] text-emerald-400",
+                        className: "mb-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-emerald-400 sm:mb-4 sm:text-sm sm:tracking-[0.45em]",
                         children: "Inside the Experience"
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 49,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-5xl font-bold lg:text-6xl",
+                        className: "text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl",
                         children: [
                             "This is",
                             " ",
@@ -2062,55 +2210,65 @@ function Gallery() {
                                 className: "bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent",
                                 children: [
                                     "Adelaide",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                        className: "hidden sm:block"
+                                    }, void 0, false, {
                                         fileName: "[project]/components/sections/Gallery.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "sm:hidden",
+                                        children: " "
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/Gallery.tsx",
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, this),
                                     "MedTech Hackathon."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Gallery.tsx",
-                                lineNumber: 55,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 53,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Gallery.tsx",
-                lineNumber: 47,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative",
+                className: "relative w-full max-w-full overflow-x-clip [contain:layout_paint]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pointer-events-none absolute left-0 top-0 z-10 h-full w-48 bg-gradient-to-r from-[#0f1322] to-transparent"
+                        className: "pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#0f1322] to-transparent sm:w-20 lg:w-48"
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 66,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-[#0f1322] to-transparent"
+                        className: "pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#0f1322] to-transparent sm:w-20 lg:w-48"
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 69,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-8",
+                        className: "flex w-full max-w-full flex-col gap-2.5 overflow-x-clip sm:gap-4 lg:gap-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GalleryRow, {
                                 images: row1
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Gallery.tsx",
-                                lineNumber: 72,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(GalleryRow, {
@@ -2118,25 +2276,25 @@ function Gallery() {
                                 reverse: true
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Gallery.tsx",
-                                lineNumber: 73,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Gallery.tsx",
-                        lineNumber: 71,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Gallery.tsx",
-                lineNumber: 64,
+                lineNumber: 95,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Gallery.tsx",
-        lineNumber: 46,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
@@ -2556,174 +2714,186 @@ function Team() {
     const activeTheme = themeMap[activeGroup];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "team",
-        className: "relative flex w-full flex-col items-center py-16 sm:py-24",
+        className: "relative isolate flex w-full max-w-full flex-col items-center overflow-x-clip py-16 sm:py-24 [contain:layout_paint]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$BackgroundGlow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 colour: "rose",
                 position: "center"
             }, void 0, false, {
                 fileName: "[project]/components/sections/Team.tsx",
-                lineNumber: 34,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container mx-auto flex w-full max-w-[85rem] flex-col items-center px-6 md:px-12 lg:px-16",
+                className: "relative z-10 mx-auto flex w-full max-w-[85rem] flex-col items-center px-4 sm:px-6 md:px-12 lg:px-16",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex w-full max-w-3xl flex-col items-center justify-center text-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-violet-300",
-                                children: "Meet the DREAM Team"
+                                className: "mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-violet-300 sm:mb-4 sm:text-sm sm:tracking-[0.35em]",
+                                children: "Meet the Dream Team"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Team.tsx",
-                                lineNumber: 40,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "mb-8 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl",
+                                className: "text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl",
                                 children: [
                                     "14 students.",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/components/sections/Team.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this),
                                     "One shared mission."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Team.tsx",
-                                lineNumber: 44,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mx-auto max-w-2xl text-lg leading-relaxed text-slate-400 sm:text-xl",
-                                children: "Adelaide MedTech Hackathon is entirely student-led. Every sponsor, workshop, mentor, and experience is organised by a passionate committee committed to advancing healthcare innovation."
+                                className: "mx-auto mt-5 max-w-2xl text-sm leading-6 text-slate-400 sm:mt-8 sm:text-lg sm:leading-relaxed lg:text-xl",
+                                children: "Adelaide MedTech Hackathon is entirely student-led. Every sponsor, workshop, mentor and experience is organised by a passionate committee committed to advancing healthcare innovation."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Team.tsx",
-                                lineNumber: 50,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Team.tsx",
-                        lineNumber: 39,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "my-12 flex flex-wrap justify-center gap-4 sm:gap-6",
-                        children: groups.map((group)=>{
-                            const isActive = activeGroup === group;
-                            const theme = themeMap[group];
-                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>setActiveGroup(group),
-                                className: `group relative rounded-full px-6 py-2.5 text-sm font-bold tracking-wide transition-all duration-300 sm:px-8 sm:py-3 sm:text-base ${isActive ? `glass border ${theme.border} ${theme.bg} text-white shadow-lg` : `border border-white/10 bg-white/5 ${theme.text} hover:border-white/20 hover:bg-white/10 hover:text-white`}`,
-                                children: group
-                            }, group, false, {
-                                fileName: "[project]/components/sections/Team.tsx",
-                                lineNumber: 62,
-                                columnNumber: 15
-                            }, this);
-                        })
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/Team.tsx",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-full",
+                        className: "my-8 w-full sm:my-12",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid w-full gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8",
-                            children: activeMembers.map((member)=>{
-                                const isDirector = member.role.toLowerCase().includes("director");
-                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: `glass group flex flex-col items-center rounded-3xl border border-white/10 p-5 transition-all duration-500 hover:-translate-y-2 hover:border-white/20 hover:shadow-xl sm:p-6 ${isDirector ? "bg-white/10 shadow-[0_0_15px_rgba(255,255,255,0.05)]" : ""} ${activeTheme.glow}`,
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative mb-5 w-full overflow-hidden rounded-2xl bg-white/5 aspect-[4/5] shadow-md",
-                                            children: [
-                                                isDirector && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute right-3 top-3 z-10 rounded-full border border-white/20 bg-black/40 px-3 py-1 backdrop-blur-md",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-[10px] font-bold uppercase tracking-widest text-white shadow-sm",
-                                                        children: "Director"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/components/sections/Team.tsx",
-                                                        lineNumber: 96,
-                                                        columnNumber: 25
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/Team.tsx",
-                                                    lineNumber: 95,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: member.image,
-                                                    alt: member.name,
-                                                    width: 400,
-                                                    height: 500,
-                                                    className: "h-full w-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/Team.tsx",
-                                                    lineNumber: 102,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/sections/Team.tsx",
-                                                    lineNumber: 109,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/sections/Team.tsx",
-                                            lineNumber: 92,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "mb-2 text-center text-lg font-bold tracking-tight text-white sm:text-xl",
-                                            children: member.name
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/Team.tsx",
-                                            lineNumber: 113,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: `text-center text-xs font-semibold uppercase tracking-widest ${activeTheme.text}`,
-                                            children: member.role
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/sections/Team.tsx",
-                                            lineNumber: 118,
-                                            columnNumber: 19
-                                        }, this)
-                                    ]
-                                }, member.name, true, {
+                            role: "tablist",
+                            "aria-label": "Team departments",
+                            className: "mx-auto flex w-full max-w-full gap-2 overflow-x-auto px-1 pb-2 sm:flex-wrap sm:justify-center sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:gap-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden",
+                            children: groups.map((group)=>{
+                                const isActive = activeGroup === group;
+                                const theme = themeMap[group];
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    role: "tab",
+                                    "aria-selected": isActive,
+                                    onClick: ()=>setActiveGroup(group),
+                                    className: `relative shrink-0 whitespace-nowrap rounded-full border px-4 py-2 text-xs font-bold tracking-wide transition-all duration-300 sm:px-6 sm:py-2.5 sm:text-sm lg:px-8 lg:py-3 lg:text-base ${isActive ? `${theme.border} ${theme.bg} text-white shadow-lg` : `border-white/10 bg-white/5 ${theme.text} hover:border-white/20 hover:bg-white/10 hover:text-white`}`,
+                                    children: group
+                                }, group, false, {
                                     fileName: "[project]/components/sections/Team.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 105,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Team.tsx",
-                            lineNumber: 80,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Team.tsx",
-                        lineNumber: 79,
+                        lineNumber: 94,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "w-full",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid w-full grid-cols-2 gap-3 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-8",
+                            children: activeMembers.map((member)=>{
+                                const isDirector = member.role.toLowerCase().includes("director");
+                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: `glass group flex min-w-0 flex-col items-center rounded-[18px] border border-white/10 p-2.5 transition-all duration-500 sm:rounded-3xl sm:p-5 lg:p-6 lg:hover:-translate-y-2 lg:hover:border-white/20 lg:hover:shadow-xl ${isDirector ? "bg-white/10 shadow-[0_0_15px_rgba(255,255,255,0.05)]" : ""} ${activeTheme.glow}`,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative mb-3 aspect-[4/5] w-full overflow-hidden rounded-[14px] bg-white/5 shadow-md sm:mb-5 sm:rounded-2xl",
+                                            children: [
+                                                isDirector && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute right-1.5 top-1.5 z-10 rounded-full border border-white/20 bg-black/50 px-2 py-1 backdrop-blur-md sm:right-3 sm:top-3 sm:px-3",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-[7px] font-bold uppercase tracking-[0.12em] text-white sm:text-[10px] sm:tracking-widest",
+                                                        children: "Director"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/Team.tsx",
+                                                        lineNumber: 146,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/Team.tsx",
+                                                    lineNumber: 145,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: member.image,
+                                                    alt: member.name,
+                                                    fill: true,
+                                                    sizes: "(max-width: 639px) 45vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw",
+                                                    className: "object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/Team.tsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent sm:from-black/50 sm:opacity-0 sm:transition-opacity sm:duration-500 sm:group-hover:opacity-100"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/Team.tsx",
+                                                    lineNumber: 160,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/sections/Team.tsx",
+                                            lineNumber: 142,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "line-clamp-2 min-h-[2.5rem] text-center text-sm font-bold leading-5 tracking-tight text-white sm:mb-2 sm:min-h-0 sm:text-lg lg:text-xl",
+                                            children: member.name
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/sections/Team.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: `mt-1 line-clamp-2 min-h-[2rem] text-center text-[8px] font-semibold uppercase leading-4 tracking-[0.12em] sm:mt-0 sm:min-h-0 sm:text-xs sm:tracking-widest ${activeTheme.text}`,
+                                            children: member.role
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/sections/Team.tsx",
+                                            lineNumber: 169,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, member.name, true, {
+                                    fileName: "[project]/components/sections/Team.tsx",
+                                    lineNumber: 133,
+                                    columnNumber: 17
+                                }, this);
+                            })
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/Team.tsx",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/Team.tsx",
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Team.tsx",
-                lineNumber: 36,
+                lineNumber: 73,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Team.tsx",
-        lineNumber: 33,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }

@@ -5,117 +5,162 @@ import Image from "next/image";
 const anchorPartners = [
   {
     name: "Evolution Surgical",
-    logo: "/sponsors/healthtranslation.png",
+    logo: "/sponsors/evosurgical.png",
     role: "Gold Sponsor",
   },
   {
     name: "Commission on Excellence and Innovation in Health",
-    logo: "/sponsors/evosurgical.png",
+    logo: "/sponsors/healthtranslation.png",
     role: "Gold Sponsor",
   },
 ];
 
 const allSponsors = [
-  "/sponsors/uoa.png",
-  "/sponsors/beyondIndia.png",
-  "/sponsors/thinclab.png",
-  "/sponsors/sahealth.png",
-  "/sponsors/amt.png",
-  "/sponsors/healthtranslation.png",
-  "/sponsors/evosurgical.png"
+  {
+    name: "University of Adelaide",
+    logo: "/sponsors/uoa.png",
+  },
+  {
+    name: "Beyond India",
+    logo: "/sponsors/beyondIndia.png",
+  },
+  {
+    name: "ThincLab",
+    logo: "/sponsors/thinclab.png",
+  },
+  {
+    name: "SA Health",
+    logo: "/sponsors/sahealth.png",
+  },
+  {
+    name: "Adelaide Medical Technology",
+    logo: "/sponsors/amt.png",
+  },
+  {
+    name: "Health Translation SA",
+    logo: "/sponsors/healthtranslation.png",
+  },
+  {
+    name: "Evolution Surgical",
+    logo: "/sponsors/evosurgical.png",
+  },
 ];
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="relative overflow-hidden py-28 lg:py-32">
-      <div className="container mx-auto px-6">
+    <section
+      id="sponsors"
+      className="relative isolate w-full max-w-full overflow-x-clip py-16 sm:py-24 lg:py-32 [contain:layout_paint]"
+    >
+      <div className="mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.4em] text-violet-400">
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-emerald-400 sm:text-sm sm:tracking-[0.4em]">
             Our Partners
           </p>
 
-          <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
             Backed by Leaders in
-            <br />
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
             Health &amp; Innovation
           </h2>
 
-          <p className="mx-auto mt-5 text-base leading-7 text-slate-400 lg:text-lg">
-            Adelaide MedTech Hackathon is made possible by organisations
-            committed to shaping the future of healthcare.
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-400 sm:mt-5 sm:text-base sm:leading-7 lg:text-lg">
+            Made possible by organisations committed to shaping the future of
+            healthcare.
           </p>
         </div>
 
-        {/* Anchor partners - Widened max-width and increased gaps */}
-        <div className="mx-auto mt-14 grid w-full max-w-5xl gap-6 md:gap-10 sm:grid-cols-2">
+        {/* Gold sponsors */}
+        <div className="mx-auto mt-9 grid w-full max-w-5xl grid-cols-2 gap-3 sm:mt-14 sm:gap-6 md:gap-10">
           {anchorPartners.map((partner) => (
             <div
               key={partner.name}
-              className="group flex flex-col items-center justify-center rounded-[28px] bg-white px-8 py-12 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/30"
+              className="group flex min-w-0 flex-col items-center justify-center rounded-[20px] bg-white px-2 py-6 text-center shadow-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-500/20 sm:rounded-[28px] sm:px-6 sm:py-12"
             >
-              <div className="flex h-24 items-center justify-center">
+              {/* Larger logo area */}
+              <div className="flex h-16 w-full items-center justify-center overflow-visible sm:h-28">
                 <Image
                   src={partner.logo}
-                  width={220}
-                  height={90}
+                  width={300}
+                  height={130}
                   alt={partner.name}
-                  className="max-h-20 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 639px) 140px, 280px"
+                  className="h-auto w-[140px] max-w-none object-contain transition-transform duration-500 group-hover:scale-105 sm:w-[280px]"
                 />
               </div>
-              
-              {/* Updated to an actual gold color */}
-              <p className="mt-8 text-xs font-bold uppercase tracking-[0.3em] text-amber-500">
+
+              <p className="mt-4 text-[8px] font-bold uppercase tracking-[0.18em] text-amber-500 sm:mt-7 sm:text-xs sm:tracking-[0.3em]">
                 {partner.role}
               </p>
             </div>
           ))}
         </div>
 
-        {/* All sponsors marquee */}
-        <div className="mt-20">
-          <p className="text-center text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">
-            In Partnership With
+        {/* Sponsor marquee */}
+        <div className="mt-14 sm:mt-20">
+          <p className="text-center text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500 sm:text-xs sm:tracking-[0.4em]">
+            Supported By
           </p>
 
-          <div className="relative mt-8 overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-[var(--background)] to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-[var(--background)] to-transparent" />
+          <div className="relative mt-6 w-full max-w-full overflow-x-clip sm:mt-8 [contain:layout_paint]">
+            {/* Left fade */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[var(--background)] to-transparent sm:w-16 lg:w-24" />
 
-            <div className="flex animate-marquee gap-6">
-              {allSponsors.concat(allSponsors).map((logo, index) => (
+            {/* Right fade */}
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[var(--background)] to-transparent sm:w-16 lg:w-24" />
+
+            {/* Animated sponsor track */}
+            <div className="animate-marquee flex w-max min-w-max will-change-transform">
+              {[0, 1].map((copyIndex) => (
                 <div
-                  key={index}
-                  className="flex h-24 w-48 flex-shrink-0 items-center justify-center rounded-2xl bg-white shadow-md transition-all hover:scale-105"
+                  key={copyIndex}
+                  aria-hidden={copyIndex === 1}
+                  className="flex shrink-0 gap-2.5 pr-2.5 sm:gap-4 sm:pr-4 lg:gap-6 lg:pr-6"
                 >
-                  <Image
-                    src={logo}
-                    width={140}
-                    height={64}
-                    alt=""
-                    className="max-h-12 w-auto object-contain transition-transform hover:scale-110"
-                  />
+                  {allSponsors.map((sponsor) => (
+                    <div
+                      key={`${copyIndex}-${sponsor.name}`}
+                      className="group relative flex h-[62px] w-[112px] shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:scale-[1.03] sm:h-20 sm:w-40 sm:rounded-2xl lg:h-24 lg:w-48"
+                    >
+                      <Image
+                        src={sponsor.logo}
+                        alt={
+                          copyIndex === 0 ? `${sponsor.name} logo` : ""
+                        }
+                        fill
+                        sizes="(max-width: 639px) 112px, (max-width: 1023px) 160px, 192px"
+                        className="object-contain p-2.5 transition-transform duration-300 group-hover:scale-105 sm:p-3"
+                      />
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Become a sponsor CTA */}
-        <div className="mx-auto mt-20 max-w-2xl rounded-[32px] border border-violet-500/20 bg-gradient-to-r from-violet-500/10 via-transparent to-indigo-500/10 p-10 text-center">
-          <h3 className="text-2xl font-bold lg:text-3xl">
+        {/* Sponsor CTA */}
+        <div className="mx-auto mt-14 max-w-2xl rounded-[24px] border border-violet-500/30 bg-gradient-to-r from-violet-600/15 via-transparent to-purple-600/15 px-5 py-8 text-center shadow-[0_0_40px_rgba(139,92,246,0.1)] sm:mt-20 sm:rounded-[32px] sm:p-10">
+          <h3 className="text-xl font-bold sm:text-2xl lg:text-3xl">
             Interested in Sponsoring 2026?
           </h3>
-          <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-400 lg:text-base">
-            Join us in supporting the next generation of healthcare
-            innovators, with packages available from Bronze to Gold.
+
+          <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300 sm:text-base">
+            Support the next generation of healthcare innovators, with packages
+            available from Bronze to Gold.
           </p>
-          
+
           <a
             href="mailto:adlmedtechhackathon.sponsorships@gmail.com"
-            className="mt-6 inline-flex h-11 items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-500 px-8 text-sm font-semibold text-white shadow-[0_0_35px_rgba(124,92,255,.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_55px_rgba(124,92,255,.55)]"
+            className="mt-5 inline-flex h-10 items-center justify-center rounded-full bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500 px-6 text-sm font-semibold text-white shadow-[0_0_35px_rgba(139,92,246,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_55px_rgba(139,92,246,0.6)] sm:mt-6 sm:h-11 sm:px-8"
           >
-            Get in Touch &rarr;
+            Get in Touch
+
+            <span aria-hidden="true" className="ml-2">
+              →
+            </span>
           </a>
         </div>
       </div>

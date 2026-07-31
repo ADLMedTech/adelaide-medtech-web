@@ -2,38 +2,65 @@
 
 import Image from "next/image";
 
-// Dynamically generate all 74 image paths
-// Change '.jpg' here if your images are .png or .jpeg
-const row1 = Array.from({ length: 37 }, (_, i) => `/images/gallery/gallery${i + 1}.jpg`);
-const row2 = Array.from({ length: 37 }, (_, i) => `/images/gallery/gallery${i + 38}.jpg`);
+const row1 = Array.from(
+  { length: 37 },
+  (_, index) => `/images/gallery/gallery${index + 1}.jpg`,
+);
 
-function GalleryRow({
-  images,
-  reverse = false,
-}: {
+const row2 = Array.from(
+  { length: 37 },
+  (_, index) => `/images/gallery/gallery${index + 38}.jpg`,
+);
+
+type GalleryRowProps = {
   images: string[];
   reverse?: boolean;
-}) {
+};
+
+function GalleryRow({ images, reverse = false }: GalleryRowProps) {
   return (
-    <div className="overflow-hidden">
+    <div className="relative w-full max-w-full overflow-x-clip [contain:layout_paint]">
       <div
-        className="flex w-max gap-8"
-        style={{ 
-          // Forces a much slower 350-second animation and handles the direction
-          animation: `marquee 350s linear infinite ${reverse ? "reverse" : "normal"}` 
+        className={`flex w-max min-w-max will-change-transform [animation-duration:220s] sm:[animation-duration:280s] lg:[animation-duration:350s] ${
+          reverse ? "[animation-direction:reverse]" : ""
+        } motion-reduce:animate-none`}
+        style={{
+          animationName: "marquee",
+          animationTimingFunction: "linear",
+          animationIterationCount: "infinite",
         }}
       >
-        {[...images, ...images].map((image, index) => (
+        {/* Two identical groups create the seamless animation */}
+        {[0, 1].map((copyIndex) => (
           <div
-            key={index}
-            className="relative h-[280px] w-[420px] shrink-0 overflow-hidden rounded-[34px]"
+            key={copyIndex}
+            aria-hidden={copyIndex === 1}
+            className="flex shrink-0 gap-2.5 pr-2.5 sm:gap-4 sm:pr-4 lg:gap-8 lg:pr-8"
           >
-            <Image
-              src={image}
-              alt="Hackathon Gallery Image"
-              fill
-              className="object-cover transition duration-700 hover:scale-110"
-            />
+            {images.map((image, imageIndex) => (
+              <div
+                key={`${copyIndex}-${image}`}
+                className="group relative h-[130px] w-[195px] shrink-0 overflow-hidden rounded-[18px] border border-white/[0.07] bg-white/[0.03] shadow-lg shadow-black/10 sm:h-[190px] sm:w-[285px] sm:rounded-[24px] lg:h-[280px] lg:w-[420px] lg:rounded-[34px]"
+              >
+                <Image
+                  src={image}
+                  alt={
+                    copyIndex === 0
+                      ? `Adelaide MedTech Hackathon gallery image ${
+                          imageIndex + 1
+                        }`
+                      : ""
+                  }
+                  fill
+                  sizes="(max-width: 639px) 195px, (max-width: 1023px) 285px, 420px"
+                  quality={75}
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+
+                {/* Very subtle image finish */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/15 to-transparent" />
+              </div>
+            ))}
           </div>
         ))}
       </div>
@@ -43,32 +70,35 @@ function GalleryRow({
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="overflow-hidden py-24">
-      <div className="container mx-auto mb-16 text-center">
-        
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.45em] text-emerald-400">
+    <section
+      id="gallery"
+      className="relative isolate w-full max-w-full overflow-x-clip py-16 sm:py-20 lg:py-24 [contain:layout_paint]"
+    >
+      {/* Heading */}
+      <div className="container mx-auto mb-10 px-6 text-center sm:mb-14 lg:mb-16">
+        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-emerald-400 sm:mb-4 sm:text-sm sm:tracking-[0.45em]">
           Inside the Experience
         </p>
 
-        <h2 className="text-5xl font-bold lg:text-6xl">
+        <h2 className="text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl">
           This is{" "}
           <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
             Adelaide
-            <br />
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
             MedTech Hackathon.
           </span>
         </h2>
-        
       </div>
 
-      <div className="relative">
-        {/* Left Fade */}
-        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-48 bg-gradient-to-r from-[#0f1322] to-transparent" />
+      {/* Gallery rows */}
+      <div className="relative w-full max-w-full overflow-x-clip [contain:layout_paint]">
+        {/* Mobile-friendly edge fades */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#0f1322] to-transparent sm:w-20 lg:w-48" />
 
-        {/* Right Fade */}
-        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-[#0f1322] to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#0f1322] to-transparent sm:w-20 lg:w-48" />
 
-        <div className="flex flex-col gap-8">
+        <div className="flex w-full max-w-full flex-col gap-2.5 overflow-x-clip sm:gap-4 lg:gap-8">
           <GalleryRow images={row1} />
           <GalleryRow images={row2} reverse />
         </div>
