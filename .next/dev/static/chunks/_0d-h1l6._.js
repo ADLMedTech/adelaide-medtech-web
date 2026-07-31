@@ -1358,7 +1358,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/FadeIn.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lightbulb$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lightbulb$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lightbulb.mjs [app-client] (ecmascript) <export default as Lightbulb>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/rocket.mjs [app-client] (ecmascript) <export default as Rocket>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.mjs [app-client] (ecmascript) <export default as Users>");
 "use client";
+;
 ;
 ;
 ;
@@ -1377,57 +1381,63 @@ const stats = [
         label: "Prize Pool"
     },
     {
-        value: "Startup",
-        label: "Mentorship"
+        value: "4 Days",
+        label: "In Person"
+    }
+];
+const cards = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lightbulb$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lightbulb$3e$__["Lightbulb"],
+        title: "100% Free & No Coding Required",
+        summary: "Open to everyone from Year 10 school students to university students.",
+        details: "Some of the best ideas come from curious people, not programmers, so we will pair you with mentors and teammates who fill in the gaps.",
+        styles: {
+            border: "border-l-emerald-400",
+            iconBg: "bg-emerald-500/10",
+            iconText: "text-emerald-400",
+            summaryText: "text-emerald-300/80"
+        }
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__["Rocket"],
+        title: "The Format",
+        summary: "Over four in-person days, teams of 4 move from idea generation to pitch.",
+        details: "Receive continuous mentorship from academics and industry professionals the whole way. You will learn what IP is, how to prototype, develop a startup, and how to pitch.",
+        styles: {
+            border: "border-l-teal-400",
+            iconBg: "bg-teal-500/10",
+            iconText: "text-teal-400",
+            summaryText: "text-teal-300/80"
+        }
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"],
+        title: "Who's Behind It & Our Legacy",
+        summary: "Organised by a team of 14 students from different backgrounds and backed by ThincLab.",
+        details: "Running for over 4 years, we have hosted a variety of speakers, including experts in medical technology and veterans of hackathon competitions.",
+        styles: {
+            border: "border-l-cyan-400",
+            iconBg: "bg-cyan-500/10",
+            iconText: "text-cyan-400",
+            summaryText: "text-cyan-300/80"
+        }
     }
 ];
 function About() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "2537536cb7335d32985b805eeddeafd9c85fc5e78a01e600da956e1a025f601f") {
+    if ($[0] !== "4a106b1c2c67b99fc56faaf55e01ded7eec75d20a80cff9b36fef84a4c80bb42") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2537536cb7335d32985b805eeddeafd9c85fc5e78a01e600da956e1a025f601f";
+        $[0] = "4a106b1c2c67b99fc56faaf55e01ded7eec75d20a80cff9b36fef84a4c80bb42";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mx-auto mb-12 max-w-3xl text-center lg:mb-16",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm font-semibold uppercase tracking-[0.4em] text-violet-400",
-                        children: "About the Hackathon"
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 29,
-                        columnNumber: 80
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "mt-3 text-4xl font-bold leading-tight lg:text-5xl",
-                        children: "A 4-Day Hackathon Where Students Build Real Healthcare Solutions."
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 29,
-                        columnNumber: 183
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-6 text-base leading-7 text-slate-400 lg:text-lg",
-                        children: "Students from medicine, engineering, business, design and technology team up to tackle real healthcare challenges across Sustainability, Medical Technology, Accessibility, and Mental Health."
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 29,
-                        columnNumber: 319
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 29,
-                columnNumber: 18
-            }, this)
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "absolute left-1/2 top-0 -z-10 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[120px]"
         }, void 0, false, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 29,
+            lineNumber: 64,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -1436,34 +1446,43 @@ function About() {
     }
     let t1;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "relative flex w-full flex-1 min-h-[300px] overflow-hidden rounded-[28px] border border-white/10",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute inset-0 w-full h-full",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/images/about/about.jpg",
-                        alt: "Students collaborating",
-                        fill: true,
-                        className: "object-cover"
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto mb-12 max-w-3xl text-center lg:mb-16",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-sm font-semibold uppercase tracking-[0.4em] text-emerald-400",
+                        children: "About the Hackathon"
                     }, void 0, false, {
                         fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 36,
-                        columnNumber: 179
+                        lineNumber: 71,
+                        columnNumber: 80
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "mt-3 text-4xl font-bold leading-tight lg:text-5xl",
+                        children: "A 4-Day Hackathon Where Students Build Real Healthcare Solutions."
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/About.tsx",
+                        lineNumber: 71,
+                        columnNumber: 184
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mt-6 text-base leading-7 text-slate-400 lg:text-lg",
+                        children: "Students from medicine, engineering, business, design and technology team up to tackle real healthcare challenges across Sustainability, Medical Technology, Accessibility, and Mental Health."
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/About.tsx",
+                        lineNumber: 71,
+                        columnNumber: 320
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/sections/About.tsx",
-                    lineNumber: 36,
-                    columnNumber: 131
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 36,
-                columnNumber: 123
+                lineNumber: 71,
+                columnNumber: 18
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 36,
+            lineNumber: 71,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -1471,86 +1490,70 @@ function About() {
         t1 = $[2];
     }
     let t2;
+    let t3;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex h-full flex-col gap-4 lg:col-span-5",
-            children: [
-                t1,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    delay: 0.15,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "glass grid grid-cols-2 gap-4 rounded-2xl p-5 sm:grid-cols-4 lg:gap-x-4",
-                        children: stats.map(_AboutStatsMap)
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 43,
-                        columnNumber: 93
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/sections/About.tsx",
-                    lineNumber: 43,
-                    columnNumber: 72
-                }, this)
-            ]
-        }, void 0, true, {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            src: "/images/about/about.jpg",
+            alt: "Students collaborating",
+            fill: true,
+            className: "object-cover transition-transform duration-700 hover:scale-[1.03]"
+        }, void 0, false, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 43,
+            lineNumber: 79,
+            columnNumber: 10
+        }, this);
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+        }, void 0, false, {
+            fileName: "[project]/components/sections/About.tsx",
+            lineNumber: 80,
             columnNumber: 10
         }, this);
         $[3] = t2;
-    } else {
-        t2 = $[3];
-    }
-    let t3;
-    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-            className: "text-3xl text-emerald-400",
-            children: "✦"
-        }, void 0, false, {
-            fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 50,
-            columnNumber: 10
-        }, this);
         $[4] = t3;
     } else {
+        t2 = $[3];
         t3 = $[4];
     }
     let t4;
     if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            delay: 0.1,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "glass flex h-full items-center gap-5 rounded-2xl border-l-4 border-l-emerald-400 p-6 sm:p-8",
-                children: [
-                    t3,
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm leading-relaxed text-slate-300 sm:text-base",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "font-semibold text-white",
-                                children: "100% Free & No Coding Required."
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative flex min-h-[300px] flex-1 w-full overflow-hidden rounded-[28px] border border-white/10 shadow-2xl",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 h-full w-full",
+                    children: [
+                        t2,
+                        t3,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "absolute bottom-6 left-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs font-bold uppercase tracking-[0.25em] text-emerald-300",
+                                children: "Adelaide · Late 2025"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/About.tsx",
-                                lineNumber: 57,
-                                columnNumber: 210
-                            }, this),
-                            " ",
-                            "Open to everyone from Year 10 school students to university students. Some of the best ideas come from curious people, not programmers, so we will pair you with mentors and teammates who fill in the gaps."
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 57,
-                        columnNumber: 143
-                    }, this)
-                ]
-            }, void 0, true, {
+                                lineNumber: 89,
+                                columnNumber: 240
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/About.tsx",
+                            lineNumber: 89,
+                            columnNumber: 198
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/sections/About.tsx",
+                    lineNumber: 89,
+                    columnNumber: 142
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 57,
-                columnNumber: 30
+                lineNumber: 89,
+                columnNumber: 134
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 57,
+            lineNumber: 89,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -1559,36 +1562,29 @@ function About() {
     }
     let t5;
     if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            delay: 0.2,
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "glass flex h-full flex-col justify-center rounded-2xl p-6 sm:p-8",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-xs font-semibold uppercase tracking-[0.3em] text-violet-400",
-                        children: "The Format"
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex h-full flex-col gap-4 lg:col-span-6",
+            children: [
+                t4,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    delay: 0.15,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "glass grid grid-cols-2 gap-4 rounded-2xl p-5 sm:grid-cols-4 lg:gap-x-4",
+                        children: stats.map(_AboutStatsMap)
                     }, void 0, false, {
                         fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 64,
-                        columnNumber: 112
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-3 text-sm leading-relaxed text-slate-300 sm:text-base",
-                        children: "Over four in-person days, teams of 4 move from idea generation through to a final pitch day and closing ceremony, with continuous mentorship from academics and industry professionals the whole way. You will learn what IP is, how to prototype, develop a startup, and how to pitch."
-                    }, void 0, false, {
-                        fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 64,
-                        columnNumber: 208
+                        lineNumber: 96,
+                        columnNumber: 93
                     }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 64,
-                columnNumber: 30
-            }, this)
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "[project]/components/sections/About.tsx",
+                    lineNumber: 96,
+                    columnNumber: 72
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 64,
+            lineNumber: 96,
             columnNumber: 10
         }, this);
         $[6] = t5;
@@ -1602,63 +1598,29 @@ function About() {
             className: "relative flex w-full flex-col justify-center px-6 py-16 sm:py-24 lg:px-12",
             children: [
                 t0,
+                t1,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mx-auto grid w-full max-w-7xl grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8",
                     children: [
-                        t2,
+                        t5,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex h-full flex-col gap-4 lg:col-span-7",
-                            children: [
-                                t4,
-                                t5,
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    delay: 0.3,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "glass flex h-full flex-col justify-center rounded-2xl p-6 sm:p-8",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-xs font-semibold uppercase tracking-[0.3em] text-violet-400",
-                                                children: "Who's Behind It & Our Legacy"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 71,
-                                                columnNumber: 382
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "mt-3 text-sm leading-relaxed text-slate-300 sm:text-base",
-                                                children: "Organised by a team of 14 students from different backgrounds and backed by ThincLab. We have hosted a variety of speakers, including experts in medical technology and veterans of hackathon competitions."
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 71,
-                                                columnNumber: 500
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/components/sections/About.tsx",
-                                        lineNumber: 71,
-                                        columnNumber: 300
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/sections/About.tsx",
-                                    lineNumber: 71,
-                                    columnNumber: 280
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            className: "flex h-full flex-col gap-4 lg:col-span-6",
+                            children: cards.map(_AboutCardsMap)
+                        }, void 0, false, {
                             fileName: "[project]/components/sections/About.tsx",
-                            lineNumber: 71,
-                            columnNumber: 214
+                            lineNumber: 103,
+                            columnNumber: 218
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/About.tsx",
-                    lineNumber: 71,
-                    columnNumber: 120
+                    lineNumber: 103,
+                    columnNumber: 124
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/About.tsx",
-            lineNumber: 71,
+            lineNumber: 103,
             columnNumber: 10
         }, this);
         $[7] = t6;
@@ -1668,6 +1630,92 @@ function About() {
     return t6;
 }
 _c = About;
+function _AboutCardsMap(card, index) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex-1",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            delay: 0.1 * (index + 1),
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `group relative flex h-full flex-col justify-center overflow-hidden rounded-[28px] border-l-4 ${card.styles.border} glass p-6 transition-all duration-500 hover:bg-white/[0.04] sm:p-8`,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: `flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full ${card.styles.iconBg} ${card.styles.iconText} transition-transform duration-500 group-hover:scale-110`,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(card.icon, {
+                                    size: 24
+                                }, void 0, false, {
+                                    fileName: "[project]/components/sections/About.tsx",
+                                    lineNumber: 111,
+                                    columnNumber: 518
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/About.tsx",
+                                lineNumber: 111,
+                                columnNumber: 327
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-xl font-bold text-white lg:text-2xl",
+                                children: card.title
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/About.tsx",
+                                lineNumber: 111,
+                                columnNumber: 547
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/sections/About.tsx",
+                        lineNumber: 111,
+                        columnNumber: 286
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: `mt-4 text-sm font-medium ${card.styles.summaryText}`,
+                        children: card.summary
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/About.tsx",
+                        lineNumber: 111,
+                        columnNumber: 627
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-rows-[0fr] opacity-0 transition-all duration-500 ease-in-out group-hover:mt-4 group-hover:grid-rows-[1fr] group-hover:opacity-100",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "overflow-hidden",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm leading-relaxed text-slate-300 lg:text-base",
+                                children: card.details
+                            }, void 0, false, {
+                                fileName: "[project]/components/sections/About.tsx",
+                                lineNumber: 111,
+                                columnNumber: 904
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/sections/About.tsx",
+                            lineNumber: 111,
+                            columnNumber: 871
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/About.tsx",
+                        lineNumber: 111,
+                        columnNumber: 714
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/sections/About.tsx",
+                lineNumber: 111,
+                columnNumber: 85
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/sections/About.tsx",
+            lineNumber: 111,
+            columnNumber: 51
+        }, this)
+    }, card.title, false, {
+        fileName: "[project]/components/sections/About.tsx",
+        lineNumber: 111,
+        columnNumber: 10
+    }, this);
+}
 function _AboutStatsMap(stat) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col justify-center text-center",
@@ -1677,7 +1725,7 @@ function _AboutStatsMap(stat) {
                 children: stat.value
             }, void 0, false, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 79,
+                lineNumber: 114,
                 columnNumber: 85
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1685,13 +1733,13 @@ function _AboutStatsMap(stat) {
                 children: stat.label
             }, void 0, false, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 79,
+                lineNumber: 114,
                 columnNumber: 157
             }, this)
         ]
     }, stat.label, true, {
         fileName: "[project]/components/sections/About.tsx",
-        lineNumber: 79,
+        lineNumber: 114,
         columnNumber: 10
     }, this);
 }
