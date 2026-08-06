@@ -31,6 +31,11 @@ export const metadata: Metadata = {
       name: "Adelaide MedTech Hackathon",
     },
   ],
+  icons: {
+    icon: "/logos/logo-dark.png",
+    shortcut: "/logos/logo-dark.png",
+    apple: "/logos/logo-dark.png",
+  },
   openGraph: {
     title: "Adelaide MedTech Hackathon",
     description:
