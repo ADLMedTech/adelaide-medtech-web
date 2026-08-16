@@ -88,9 +88,11 @@ export default function About() {
             <FadeIn>
               <div className="absolute inset-0 h-full w-full">
                 <Image
-                  src="/images/about/about.jpg"
+                  src="/images/about/about.webp"
                   alt="Students collaborating"
                   fill
+                  priority
+                  sizes="(max-width: 1023px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 hover:scale-[1.03]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

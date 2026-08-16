@@ -17,7 +17,7 @@ export default function PhotoCollage() {
         className="absolute left-0 top-0 overflow-hidden rounded-[36px]"
       >
         <Image
-          src="/images/hero/hero1.jpg"
+          src="/images/hero/hero1.webp"
           width={520}
           height={650}
           alt=""
@@ -29,7 +29,7 @@ export default function PhotoCollage() {
         className="glass absolute bottom-0 right-0 overflow-hidden rounded-[32px]"
       >
         <Image
-          src="/images/hero/hero2.jpg"
+          src="/images/hero/hero2.webp"
           width={290}
           height={250}
           alt=""
@@ -41,7 +41,7 @@ export default function PhotoCollage() {
         className="glass absolute left-24 bottom-32 overflow-hidden rounded-[30px]"
       >
         <Image
-          src="/images/hero/hero4.jpg"
+          src="/images/hero/hero4.webp"
           width={260}
           height={180}
           alt=""
@@ -59,7 +59,7 @@ export default function PhotoCollage() {
         className="glass absolute right-10 top-10 overflow-hidden rounded-[28px]"
       >
         <Image
-          src="/images/hero/hero3.jpg"
+          src="/images/hero/hero3.webp"
           width={220}
           height={260}
           alt=""

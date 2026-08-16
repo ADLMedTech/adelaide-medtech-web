@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 
+// Row 1: Images 1 to 37
 const row1 = Array.from(
   { length: 37 },
-  (_, index) => `/images/gallery/gallery${index + 1}.jpg`,
+  (_, index) => `/images/gallery/gallery${index + 1}.webp`,
 );
 
+// Row 2: Images 38 to 74 
 const row2 = Array.from(
   { length: 37 },
-  (_, index) => `/images/gallery/gallery${index + 38}.jpg`,
+  (_, index) => `/images/gallery/gallery${index + 38}.webp`,
 );
 
 type GalleryRowProps = {
@@ -53,7 +55,9 @@ function GalleryRow({ images, reverse = false }: GalleryRowProps) {
                   }
                   fill
                   sizes="(max-width: 639px) 195px, (max-width: 1023px) 285px, 420px"
-                  quality={75}
+                  quality={50}
+                  loading="lazy"
+                  decoding="async"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 

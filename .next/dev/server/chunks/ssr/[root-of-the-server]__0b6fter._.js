@@ -89,6 +89,11 @@ const metadata = {
             name: "Adelaide MedTech Hackathon"
         }
     ],
+    icons: {
+        icon: "/logos/logo-dark.png",
+        shortcut: "/logos/logo-dark.png",
+        apple: "/logos/logo-dark.png"
+    },
     openGraph: {
         title: "Adelaide MedTech Hackathon",
         description: "Where Healthcare Meets Innovation.",
@@ -107,12 +112,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 56,
+            lineNumber: 61,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 51,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }

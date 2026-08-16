@@ -154,6 +154,8 @@ export default function Team() {
                       alt={member.name}
                       fill
                       sizes="(max-width: 639px) 45vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
+                      loading="lazy"
+                      decoding="async"
                       className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                     />
 

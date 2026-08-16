@@ -598,11 +598,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 function PhotoCollage() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
-    if ($[0] !== "72dc46aff115aaf2fec8f05e6c923811b7e9256bc17cb0b921e6ba0b14218a59") {
+    if ($[0] !== "759c608a24a12368963edd282d4ce71c9c0dc3969eabda50daafd222c0a06cf7") {
         for(let $i = 0; $i < 10; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "72dc46aff115aaf2fec8f05e6c923811b7e9256bc17cb0b921e6ba0b14218a59";
+        $[0] = "759c608a24a12368963edd282d4ce71c9c0dc3969eabda50daafd222c0a06cf7";
     }
     let t0;
     let t1;
@@ -642,7 +642,7 @@ function PhotoCollage() {
             whileHover: t3,
             className: "absolute left-0 top-0 overflow-hidden rounded-[36px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                src: "/images/hero/hero1.jpg",
+                src: "/images/hero/hero1.webp",
                 width: 520,
                 height: 650,
                 alt: ""
@@ -675,7 +675,7 @@ function PhotoCollage() {
             whileHover: t5,
             className: "glass absolute bottom-0 right-0 overflow-hidden rounded-[32px]",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                src: "/images/hero/hero2.jpg",
+                src: "/images/hero/hero2.webp",
                 width: 290,
                 height: 250,
                 alt: ""
@@ -716,7 +716,7 @@ function PhotoCollage() {
                     whileHover: t7,
                     className: "glass absolute left-24 bottom-32 overflow-hidden rounded-[30px]",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/images/hero/hero4.jpg",
+                        src: "/images/hero/hero4.webp",
                         width: 260,
                         height: 180,
                         alt: ""
@@ -748,7 +748,7 @@ function PhotoCollage() {
         className="glass absolute right-10 top-10 overflow-hidden rounded-[28px]"
       >
         <Image
-          src="/images/hero/hero3.jpg"
+          src="/images/hero/hero3.webp"
           width={220}
           height={260}
           alt=""
@@ -1619,11 +1619,11 @@ const cards = [
 ];
 function About() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "4a106b1c2c67b99fc56faaf55e01ded7eec75d20a80cff9b36fef84a4c80bb42") {
+    if ($[0] !== "e8eaba6360ca011f1b1ad18419c799e61ca7cfbe22a4eed04202d7b077d0f952") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "4a106b1c2c67b99fc56faaf55e01ded7eec75d20a80cff9b36fef84a4c80bb42";
+        $[0] = "e8eaba6360ca011f1b1ad18419c799e61ca7cfbe22a4eed04202d7b077d0f952";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1687,9 +1687,11 @@ function About() {
     let t3;
     if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
         t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            src: "/images/about/about.jpg",
+            src: "/images/about/about.webp",
             alt: "Students collaborating",
             fill: true,
+            priority: true,
+            sizes: "(max-width: 1023px) 100vw, 50vw",
             className: "object-cover transition-transform duration-700 hover:scale-[1.03]"
         }, void 0, false, {
             fileName: "[project]/components/sections/About.tsx",
@@ -2867,19 +2869,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
+// Row 1: Images 1 to 37
 const row1 = Array.from({
     length: 37
-}, (_, index)=>`/images/gallery/gallery${index + 1}.jpg`);
+}, (_, index)=>`/images/gallery/gallery${index + 1}.webp`);
+// Row 2: Images 38 to 74 
 const row2 = Array.from({
     length: 37
-}, (_, index)=>`/images/gallery/gallery${index + 38}.jpg`);
+}, (_, index)=>`/images/gallery/gallery${index + 38}.webp`);
 function GalleryRow(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "5057a7447a1d8055c8dd32953fc38bb8db3be22b65e50d07de3e99b7f1dd9fd0") {
+    if ($[0] !== "ac14ec0a8815ecaa84c1891b67265375bd58d75ac9e5b957b251275db13d2e0c") {
         for(let $i = 0; $i < 8; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5057a7447a1d8055c8dd32953fc38bb8db3be22b65e50d07de3e99b7f1dd9fd0";
+        $[0] = "ac14ec0a8815ecaa84c1891b67265375bd58d75ac9e5b957b251275db13d2e0c";
     }
     const { images, reverse: t1 } = t0;
     const reverse = t1 === undefined ? false : t1;
@@ -2917,30 +2921,32 @@ function GalleryRow(t0) {
                                         alt: copyIndex === 0 ? `Adelaide MedTech Hackathon gallery image ${imageIndex + 1}` : "",
                                         fill: true,
                                         sizes: "(max-width: 639px) 195px, (max-width: 1023px) 285px, 420px",
-                                        quality: 75,
+                                        quality: 50,
+                                        loading: "lazy",
+                                        decoding: "async",
                                         className: "object-cover transition-transform duration-700 group-hover:scale-105"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Gallery.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 52,
                                         columnNumber: 357
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/15 to-transparent"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Gallery.tsx",
-                                        lineNumber: 48,
-                                        columnNumber: 641
+                                        lineNumber: 52,
+                                        columnNumber: 673
                                     }, this)
                                 ]
                             }, `${copyIndex}-${image}`, true, {
                                 fileName: "[project]/components/sections/Gallery.tsx",
-                                lineNumber: 48,
+                                lineNumber: 52,
                                 columnNumber: 78
                             }, this)
                     }["GalleryRow[(anonymous)() > images.map()]"])
                 }, copyIndex, false, {
                     fileName: "[project]/components/sections/Gallery.tsx",
-                    lineNumber: 47,
+                    lineNumber: 51,
                     columnNumber: 49
                 }, this)
         }["GalleryRow[(anonymous)()]"]);
@@ -2959,12 +2965,12 @@ function GalleryRow(t0) {
                 children: t5
             }, void 0, false, {
                 fileName: "[project]/components/sections/Gallery.tsx",
-                lineNumber: 58,
+                lineNumber: 62,
                 columnNumber: 93
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 58,
+            lineNumber: 62,
             columnNumber: 10
         }, this);
         $[5] = t2;
@@ -2978,11 +2984,11 @@ function GalleryRow(t0) {
 _c = GalleryRow;
 function Gallery() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(6);
-    if ($[0] !== "5057a7447a1d8055c8dd32953fc38bb8db3be22b65e50d07de3e99b7f1dd9fd0") {
+    if ($[0] !== "ac14ec0a8815ecaa84c1891b67265375bd58d75ac9e5b957b251275db13d2e0c") {
         for(let $i = 0; $i < 6; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5057a7447a1d8055c8dd32953fc38bb8db3be22b65e50d07de3e99b7f1dd9fd0";
+        $[0] = "ac14ec0a8815ecaa84c1891b67265375bd58d75ac9e5b957b251275db13d2e0c";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -2991,7 +2997,7 @@ function Gallery() {
             children: "Inside the Experience"
         }, void 0, false, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 77,
+            lineNumber: 81,
             columnNumber: 10
         }, this);
         $[1] = t0;
@@ -3017,7 +3023,7 @@ function Gallery() {
                                     className: "hidden sm:block"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Gallery.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 88,
                                     columnNumber: 290
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3025,26 +3031,26 @@ function Gallery() {
                                     children: " "
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Gallery.tsx",
-                                    lineNumber: 84,
+                                    lineNumber: 88,
                                     columnNumber: 324
                                 }, this),
                                 "MedTech Hackathon."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Gallery.tsx",
-                            lineNumber: 84,
+                            lineNumber: 88,
                             columnNumber: 175
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Gallery.tsx",
-                    lineNumber: 84,
+                    lineNumber: 88,
                     columnNumber: 90
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 84,
+            lineNumber: 88,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -3058,14 +3064,14 @@ function Gallery() {
             className: "pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[#0f1322] to-transparent sm:w-20 lg:w-48"
         }, void 0, false, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 92,
+            lineNumber: 96,
             columnNumber: 10
         }, this);
         t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[#0f1322] to-transparent sm:w-20 lg:w-48"
         }, void 0, false, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 93,
+            lineNumber: 97,
             columnNumber: 10
         }, this);
         $[3] = t2;
@@ -3093,7 +3099,7 @@ function Gallery() {
                                     images: row1
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Gallery.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 106,
                                     columnNumber: 328
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GalleryRow, {
@@ -3101,25 +3107,25 @@ function Gallery() {
                                     reverse: true
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Gallery.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 106,
                                     columnNumber: 356
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Gallery.tsx",
-                            lineNumber: 102,
+                            lineNumber: 106,
                             columnNumber: 237
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Gallery.tsx",
-                    lineNumber: 102,
+                    lineNumber: 106,
                     columnNumber: 146
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/Gallery.tsx",
-            lineNumber: 102,
+            lineNumber: 106,
             columnNumber: 10
         }, this);
         $[5] = t4;
@@ -3555,98 +3561,98 @@ const team = [
         name: "Namalu Abeysundara",
         role: "President",
         department: "Executive",
-        image: "/images/team/namalu.jpg",
+        image: "/images/team/namalu.webp",
         linkedin: "#"
     },
     {
         name: "Benjamin Yuen",
         role: "Vice President",
         department: "Executive",
-        image: "/images/team/benjamin.jpg",
+        image: "/images/team/benjamin.webp",
         linkedin: "#"
     },
     {
         name: "Jerel Chua",
         role: "Secretary",
         department: "Executive",
-        image: "/images/team/jerel.jpg",
+        image: "/images/team/jerel.webp",
         linkedin: "#"
     },
     {
         name: "Xiaoran Han",
         role: "Treasurer",
         department: "Executive",
-        image: "/images/team/xiaoran.jpg",
+        image: "/images/team/xiaoran.webp",
         linkedin: "#"
     },
     {
         name: "Mirra Kannen",
         role: "Sponsorship Director",
         department: "Sponsorship",
-        image: "/images/team/mirra.jpg",
+        image: "/images/team/mirra.webp",
         linkedin: "#"
     },
     {
         name: "Mah Rukh Fatima",
         role: "Sponsorship Officer",
         department: "Sponsorship",
-        image: "/images/team/mahrukh.jpg",
+        image: "/images/team/mahrukh.webp",
         linkedin: "#"
     },
     {
         name: "Amnaa Masood",
         role: "Sponsorship Officer",
         department: "Sponsorship",
-        image: "/images/team/amnaa.jpg",
+        image: "/images/team/amnaa.webp",
         linkedin: "#"
     },
     {
         name: "Muhammad Ahmad",
-        role: "Media Officer",
+        role: "Media Director",
         department: "Media",
-        image: "/images/team/muhammad.jpg",
-        linkedin: "#"
+        image: "/images/team/muhammad.webp",
+        linkedin: "https://www.linkedin.com/in/mrmuhammad2005/"
     },
     {
         name: "Lirri Das",
         role: "Media Officer",
         department: "Media",
-        image: "/images/team/lirri.jpg",
+        image: "/images/team/lirri.webp",
         linkedin: "#"
     },
     {
         name: "Noel Modi",
         role: "Logistics Director",
         department: "Logistics",
-        image: "/images/team/noel.jpg",
+        image: "/images/team/noel.webp",
         linkedin: "#"
     },
     {
         name: "Anam Ahsan",
         role: "Logistics Officer",
         department: "Logistics",
-        image: "/images/team/anam.jpg",
+        image: "/images/team/anam.webp",
         linkedin: "#"
     },
     {
         name: "Himaan Patel",
         role: "Events Director",
         department: "Events",
-        image: "/images/team/himaan.jpg",
+        image: "/images/team/himaan.webp",
         linkedin: "#"
     },
     {
         name: "Aarya Patel",
         role: "Events Officer",
         department: "Events",
-        image: "/images/team/aarya.jpg",
+        image: "/images/team/aarya.webp",
         linkedin: "#"
     },
     {
         name: "Husan Ara",
         role: "Events Officer",
         department: "Events",
-        image: "/images/team/husan.jpg",
+        image: "/images/team/husan.webp",
         linkedin: "#"
     }
 ];
@@ -3717,11 +3723,11 @@ const themeMap = {
 function Team() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
-    if ($[0] !== "d7da7284345023772948038b76ba32ffe565bd895d90ef07ab4d2e9f75fab075") {
+    if ($[0] !== "5cc59682bbe50bcd732129ceaea73172a4affb991292ea249b98594b6561511d") {
         for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "d7da7284345023772948038b76ba32ffe565bd895d90ef07ab4d2e9f75fab075";
+        $[0] = "5cc59682bbe50bcd732129ceaea73172a4affb991292ea249b98594b6561511d";
     }
     const [activeGroup, setActiveGroup] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Executive");
     let t0;
@@ -3883,6 +3889,8 @@ function Team() {
                                         alt: member_0.name,
                                         fill: true,
                                         sizes: "(max-width: 639px) 45vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw",
+                                        loading: "lazy",
+                                        decoding: "async",
                                         className: "object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Team.tsx",
@@ -3894,7 +3902,7 @@ function Team() {
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Team.tsx",
                                         lineNumber: 114,
-                                        columnNumber: 1044
+                                        columnNumber: 1076
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -3908,7 +3916,7 @@ function Team() {
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Team.tsx",
                                 lineNumber: 114,
-                                columnNumber: 1263
+                                columnNumber: 1295
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: `mt-1 line-clamp-2 min-h-[2rem] text-center text-[8px] font-semibold uppercase leading-4 tracking-[0.12em] sm:mt-0 sm:min-h-0 sm:text-xs sm:tracking-widest ${activeTheme.text}`,
@@ -3916,7 +3924,7 @@ function Team() {
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Team.tsx",
                                 lineNumber: 114,
-                                columnNumber: 1434
+                                columnNumber: 1466
                             }, this)
                         ]
                     }, member_0.name, true, {
