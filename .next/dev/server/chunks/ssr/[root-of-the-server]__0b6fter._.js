@@ -72,8 +72,8 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$s
 ;
 ;
 const metadata = {
-    title: "Adelaide MedTech Hackathon",
-    description: "South Australia's premier student healthcare innovation hackathon.",
+    title: "Adelaide MedTech Hackathon | Innovating Healthcare",
+    description: "South Australia's premier student healthcare innovation hackathon. Tackle real-world medical challenges.",
     keywords: [
         "Hackathon",
         "Healthcare",
@@ -81,12 +81,19 @@ const metadata = {
         "Technology",
         "Innovation",
         "University of Adelaide",
+        "Adelaide University",
         "Medical",
-        "Engineering"
+        "Engineering",
+        "Adelaide",
+        "South Australia"
     ],
     authors: [
         {
-            name: "Adelaide MedTech Hackathon"
+            name: "Adelaide MedTech Hackathon Club"
+        },
+        {
+            name: "Muhammad Ahmad",
+            url: "https://adelaidemedtech.com"
         }
     ],
     icons: {
@@ -97,10 +104,18 @@ const metadata = {
     openGraph: {
         title: "Adelaide MedTech Hackathon",
         description: "Where Healthcare Meets Innovation.",
-        url: "https://adlmedtech.com",
+        url: "https://adelaidemedtech.com",
         siteName: "Adelaide MedTech Hackathon",
         locale: "en_AU",
-        type: "website"
+        type: "website",
+        images: [
+            {
+                url: "https://adelaidemedtech.com/logos/logo-dark.png",
+                width: 1200,
+                height: 630,
+                alt: "Adelaide MedTech Hackathon Logo"
+            }
+        ]
     }
 };
 function RootLayout({ children }) {
@@ -108,16 +123,71 @@ function RootLayout({ children }) {
         lang: "en",
         suppressHydrationWarning: true,
         className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_5901b7c6$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} ${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$space_grotesk_3ab9bced$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable}`,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
-            children: children
-        }, void 0, false, {
-            fileName: "[project]/app/layout.tsx",
-            lineNumber: 61,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("head", {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                    type: "application/ld+json",
+                    dangerouslySetInnerHTML: {
+                        __html: JSON.stringify([
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "WebSite",
+                                "name": "Adelaide MedTech Hackathon",
+                                "url": "https://adelaidemedtech.com/",
+                                "creator": {
+                                    "@type": "Person",
+                                    "name": "Muhammad Ahmad",
+                                    "jobTitle": "Media Director & Developer"
+                                }
+                            },
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "Event",
+                                "name": "Adelaide MedTech Hackathon 2026",
+                                "url": "https://adelaidemedtech.com/",
+                                "startDate": "2026-08-19T09:00",
+                                "endDate": "2026-08-22T17:00",
+                                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                                "location": {
+                                    "@type": "Place",
+                                    "name": "Adelaide",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Adelaide",
+                                        "addressRegion": "SA",
+                                        "addressCountry": "AU"
+                                    }
+                                },
+                                "description": "South Australia's premier student healthcare innovation hackathon.",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "name": "Adelaide MedTech Hackathon Club",
+                                    "url": "https://adelaidemedtech.com/"
+                                }
+                            }
+                        ])
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/app/layout.tsx",
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/layout.tsx",
+                lineNumber: 70,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
+                children: children
+            }, void 0, false, {
+                fileName: "[project]/app/layout.tsx",
+                lineNumber: 115,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 56,
+        lineNumber: 65,
         columnNumber: 5
     }, this);
 }

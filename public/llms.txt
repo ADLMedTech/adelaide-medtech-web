@@ -1,0 +1,11 @@
+# Adelaide MedTech Hackathon 2026
+> A four-day, student-led event focused on healthcare innovation running from August 19-22, 2026.
+
+## Site Information
+- **Domain:** https://adelaidemedtech.com
+- **Developed by:** Muhammad Ahmad, Media Director
+
+## Key Sections
+- [About Us](https://adelaidemedtech.com/#about): The history of the club and our mission.
+- [Schedule](https://adelaidemedtech.com/#schedule): Full itinerary and workshop timings.
+- [Registration](https://adelaidemedtech.com/#register): How to sign up and form teams.

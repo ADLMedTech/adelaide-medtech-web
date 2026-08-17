@@ -3167,7 +3167,7 @@ const winnersData = [
         award: "Champion",
         project: "Medilink",
         description: "An AI-powered clinical decision support platform helping healthcare professionals identify high-risk patients earlier.",
-        image: "/images/winners/2025-2.jpg",
+        image: "/images/winners/2025-2.webp",
         team: [
             "Vedant Puri",
             "Angelina Rajic",
@@ -3181,7 +3181,7 @@ const winnersData = [
         award: "Runner-Up",
         project: "Visionary",
         description: "Improving healthcare accessibility through an optical device paired with an intuitive digital platform allowing patients to self-monitor their eye health and connect with healthcare professionals remotely.",
-        image: "/images/winners/2025-1.jpg",
+        image: "/images/winners/2025-1.webp",
         team: [
             "Noel Modi",
             "Adi Polara"
@@ -3191,11 +3191,11 @@ const winnersData = [
 function Winners() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(37);
-    if ($[0] !== "74598b3b477e4ce8f3cfa273f42af2a98f495ecb148019c7e9a9ea4e4a6c5c67") {
+    if ($[0] !== "3ca8315c4b4a8b2b43c46b33d07a5f8462cbfb6804516a5a004baf0fbc5b5a6c") {
         for(let $i = 0; $i < 37; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "74598b3b477e4ce8f3cfa273f42af2a98f495ecb148019c7e9a9ea4e4a6c5c67";
+        $[0] = "3ca8315c4b4a8b2b43c46b33d07a5f8462cbfb6804516a5a004baf0fbc5b5a6c";
     }
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const active = winnersData[activeIndex];
