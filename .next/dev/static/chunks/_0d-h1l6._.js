@@ -3614,10 +3614,10 @@ const team = [
         linkedin: "https://www.linkedin.com/in/mrmuhammad2005/"
     },
     {
-        name: "Lirri Das",
+        name: "Liri Das",
         role: "Media Officer",
         department: "Media",
-        image: "/images/team/lirri.webp",
+        image: "/images/team/liri.webp",
         linkedin: "#"
     },
     {
