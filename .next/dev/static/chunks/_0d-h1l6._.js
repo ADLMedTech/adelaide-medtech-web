@@ -1094,52 +1094,52 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const anchorPartners = [
     {
         name: "Evolution Surgical",
-        logo: "/sponsors/evosurgical.png",
+        logo: "/sponsors/evosurgical.webp",
         role: "Gold Sponsor"
     },
     {
         name: "Commission on Excellence and Innovation in Health",
-        logo: "/sponsors/healthtranslation.png",
+        logo: "/sponsors/healthtranslation.webp",
         role: "Gold Sponsor"
     }
 ];
 const allSponsors = [
     {
         name: "University of Adelaide",
-        logo: "/sponsors/uoa.png"
+        logo: "/sponsors/uoa.webp"
     },
     {
         name: "Beyond India",
-        logo: "/sponsors/beyondIndia.png"
+        logo: "/sponsors/beyondIndia.webp"
     },
     {
         name: "ThincLab",
-        logo: "/sponsors/thinclab.png"
+        logo: "/sponsors/thinclab.webp"
     },
     {
         name: "SA Health",
-        logo: "/sponsors/sahealth.png"
+        logo: "/sponsors/sahealth.webp"
     },
     {
         name: "Adelaide Medical Technology",
-        logo: "/sponsors/amt.png"
+        logo: "/sponsors/amt.webp"
     },
     {
         name: "Health Translation SA",
-        logo: "/sponsors/healthtranslation.png"
+        logo: "/sponsors/healthtranslation.webp"
     },
     {
         name: "Evolution Surgical",
-        logo: "/sponsors/evosurgical.png"
+        logo: "/sponsors/evosurgical.webp"
     }
 ];
 function Sponsors() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "2e2f93f6017aa2233737bf0e0d4ab507648b4861a0ed7a1a95282e55744a6c2e") {
+    if ($[0] !== "fa06d31f03b5cd0d0308009289017f6c34a3abf35cce322a183aa3e8a9eb1dbf") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "2e2f93f6017aa2233737bf0e0d4ab507648b4861a0ed7a1a95282e55744a6c2e";
+        $[0] = "fa06d31f03b5cd0d0308009289017f6c34a3abf35cce322a183aa3e8a9eb1dbf";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {

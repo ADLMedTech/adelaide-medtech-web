@@ -5,12 +5,12 @@ import Image from "next/image";
 const anchorPartners = [
   {
     name: "Evolution Surgical",
-    logo: "/sponsors/evosurgical.png",
+    logo: "/sponsors/evosurgical.webp",
     role: "Gold Sponsor",
   },
   {
     name: "Commission on Excellence and Innovation in Health",
-    logo: "/sponsors/healthtranslation.png",
+    logo: "/sponsors/healthtranslation.webp",
     role: "Gold Sponsor",
   },
 ];
@@ -18,31 +18,31 @@ const anchorPartners = [
 const allSponsors = [
   {
     name: "University of Adelaide",
-    logo: "/sponsors/uoa.png",
+    logo: "/sponsors/uoa.webp",
   },
   {
     name: "Beyond India",
-    logo: "/sponsors/beyondIndia.png",
+    logo: "/sponsors/beyondIndia.webp",
   },
   {
     name: "ThincLab",
-    logo: "/sponsors/thinclab.png",
+    logo: "/sponsors/thinclab.webp",
   },
   {
     name: "SA Health",
-    logo: "/sponsors/sahealth.png",
+    logo: "/sponsors/sahealth.webp",
   },
   {
     name: "Adelaide Medical Technology",
-    logo: "/sponsors/amt.png",
+    logo: "/sponsors/amt.webp",
   },
   {
     name: "Health Translation SA",
-    logo: "/sponsors/healthtranslation.png",
+    logo: "/sponsors/healthtranslation.webp",
   },
   {
     name: "Evolution Surgical",
-    logo: "/sponsors/evosurgical.png",
+    logo: "/sponsors/evosurgical.webp",
   },
 ];
 
