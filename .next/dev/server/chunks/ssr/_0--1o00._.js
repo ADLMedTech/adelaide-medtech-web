@@ -27,8 +27,8 @@ const links = [
         href: "#about"
     },
     {
-        title: "Timeline",
-        href: "#timeline"
+        title: "Winners",
+        href: "#winners"
     },
     {
         title: "Themes",
@@ -748,7 +748,7 @@ const anchorPartners = [
 ];
 const allSponsors = [
     {
-        name: "University of Adelaide",
+        name: "Adelaide University",
         logo: "/sponsors/uoa.webp"
     },
     {
@@ -774,6 +774,26 @@ const allSponsors = [
     {
         name: "Evolution Surgical",
         logo: "/sponsors/evosurgical.webp"
+    },
+    {
+        name: "Australian Orthopaedic Association",
+        logo: "/sponsors/aoa.webp"
+    },
+    {
+        name: "RedBull",
+        logo: "/sponsors/redbull.webp"
+    },
+    {
+        name: "FunLab",
+        logo: "/sponsors/funlab.webp"
+    },
+    {
+        name: "KiraTech",
+        logo: "/sponsors/kiratech.webp"
+    },
+    {
+        name: "Osteo-X",
+        logo: "/sponsors/osteo.webp"
     }
 ];
 function Sponsors() {
@@ -791,7 +811,7 @@ function Sponsors() {
                             children: "Our Partners"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 58,
+                            lineNumber: 78,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -802,7 +822,7 @@ function Sponsors() {
                                     className: "hidden sm:block"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -810,14 +830,14 @@ function Sponsors() {
                                     children: " "
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this),
                                 "Health & Innovation"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 62,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -825,13 +845,13 @@ function Sponsors() {
                             children: "Made possible by organisations committed to shaping the future of healthcare."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 69,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 57,
+                    lineNumber: 77,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -850,12 +870,12 @@ function Sponsors() {
                                         className: "h-auto w-[140px] max-w-none object-contain transition-transform duration-500 group-hover:scale-105 sm:w-[280px]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Sponsors.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 104,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -863,18 +883,18 @@ function Sponsors() {
                                     children: partner.role
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 114,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, partner.name, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 78,
+                            lineNumber: 98,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 76,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -885,7 +905,7 @@ function Sponsors() {
                             children: "Supported By"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 103,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -895,14 +915,14 @@ function Sponsors() {
                                     className: "pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-[var(--background)] to-transparent sm:w-16 lg:w-24"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-[var(--background)] to-transparent sm:w-16 lg:w-24"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 132,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -923,34 +943,34 @@ function Sponsors() {
                                                         className: "object-contain p-2.5 transition-transform duration-300 group-hover:scale-105 sm:p-3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Sponsors.tsx",
-                                                        lineNumber: 127,
+                                                        lineNumber: 147,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, `${copyIndex}-${sponsor.name}`, false, {
                                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 143,
                                                     columnNumber: 21
                                                 }, this))
                                         }, copyIndex, false, {
                                             fileName: "[project]/components/sections/Sponsors.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 137,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 107,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 102,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -961,7 +981,7 @@ function Sponsors() {
                             children: "Interested in Sponsoring 2026?"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 146,
+                            lineNumber: 166,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -969,7 +989,7 @@ function Sponsors() {
                             children: "Support the next generation of healthcare innovators, with packages available from Bronze to Gold."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 150,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -983,30 +1003,30 @@ function Sponsors() {
                                     children: "→"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Sponsors.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
-                            lineNumber: 155,
+                            lineNumber: 175,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Sponsors.tsx",
-                    lineNumber: 145,
+                    lineNumber: 165,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/sections/Sponsors.tsx",
-            lineNumber: 55,
+            lineNumber: 75,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/sections/Sponsors.tsx",
-        lineNumber: 51,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
@@ -1058,12 +1078,14 @@ __turbopack_context__.s([
     ()=>About
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/FadeIn.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lightbulb$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Lightbulb$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/lightbulb.mjs [app-ssr] (ecmascript) <export default as Lightbulb>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$rocket$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Rocket$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/rocket.mjs [app-ssr] (ecmascript) <export default as Rocket>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.mjs [app-ssr] (ecmascript) <export default as Users>");
 "use client";
+;
 ;
 ;
 ;
@@ -1125,6 +1147,15 @@ const cards = [
     }
 ];
 function About() {
+    const [activeImage, setActiveImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    // This state ensures the second image is ONLY requested from the server 
+    // after the user has explicitly clicked the button to view it.
+    const [hasLoadedSecond, setHasLoadedSecond] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Added the ": number" type annotation to fix the TypeScript error
+    const handleImageSwitch = (index)=>{
+        if (index === 1) setHasLoadedSecond(true);
+        setActiveImage(index);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "about",
         className: "relative flex w-full flex-col justify-center px-6 py-16 sm:py-24 lg:px-12",
@@ -1133,7 +1164,7 @@ function About() {
                 className: "absolute left-1/2 top-0 -z-10 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-[120px]"
             }, void 0, false, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 66,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1145,7 +1176,7 @@ function About() {
                             children: "About the Hackathon"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/About.tsx",
-                            lineNumber: 70,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1153,7 +1184,7 @@ function About() {
                             children: "A 4-Day Hackathon Where Students Build Real Healthcare Solutions."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/About.tsx",
-                            lineNumber: 73,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1161,18 +1192,18 @@ function About() {
                             children: "Students from medicine, engineering, business, design and technology team up to tackle real healthcare challenges across Sustainability, Medical Technology, Accessibility, and Mental Health."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/About.tsx",
-                            lineNumber: 76,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/About.tsx",
-                    lineNumber: 69,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 68,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1185,56 +1216,95 @@ function About() {
                                 className: "relative flex min-h-[300px] flex-1 w-full overflow-hidden rounded-[28px] border border-white/10 shadow-2xl",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 h-full w-full",
+                                        className: "absolute inset-0 h-full w-full bg-black/20",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                src: "/images/about/about.webp",
+                                                src: "/images/about/about2.webp",
                                                 alt: "Students collaborating",
                                                 fill: true,
                                                 priority: true,
                                                 sizes: "(max-width: 1023px) 100vw, 50vw",
-                                                className: "object-cover transition-transform duration-700 hover:scale-[1.03]"
+                                                className: `object-cover transition-opacity duration-700 ${activeImage === 0 ? "opacity-100" : "opacity-0"}`
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 90,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                                            hasLoadedSecond && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/images/about/about.webp",
+                                                alt: "Hackathon action",
+                                                fill: true,
+                                                loading: "lazy",
+                                                sizes: "(max-width: 1023px) 100vw, 50vw",
+                                                className: `object-cover transition-opacity duration-700 ${activeImage === 1 ? "opacity-100" : "opacity-0"}`
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 116,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/sections/About.tsx",
+                                                lineNumber: 128,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute bottom-6 left-6",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-xs font-bold uppercase tracking-[0.25em] text-emerald-300",
-                                                    children: "Adelaide · Late 2025"
+                                                    children: activeImage === 0 ? "Day 3 2026" : "Adelaide · Late 2025"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/About.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 132,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 131,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute bottom-6 right-6 flex gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>handleImageSwitch(0),
+                                                        "aria-label": "View first image",
+                                                        className: `h-2 rounded-full transition-all duration-300 ${activeImage === 0 ? "w-6 bg-emerald-400" : "w-2 bg-white/40 hover:bg-white/70"}`
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/About.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>handleImageSwitch(1),
+                                                        "aria-label": "View second image",
+                                                        className: `h-2 rounded-full transition-all duration-300 ${activeImage === 1 ? "w-6 bg-emerald-400" : "w-2 bg-white/40 hover:bg-white/70"}`
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/About.tsx",
+                                                        lineNumber: 146,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/sections/About.tsx",
+                                                lineNumber: 138,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/About.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/About.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/About.tsx",
-                                lineNumber: 87,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$FadeIn$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1249,7 +1319,7 @@ function About() {
                                                     children: stat.value
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/About.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 165,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1257,29 +1327,29 @@ function About() {
                                                     children: stat.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/About.tsx",
-                                                    lineNumber: 118,
+                                                    lineNumber: 168,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, stat.label, true, {
                                             fileName: "[project]/components/sections/About.tsx",
-                                            lineNumber: 111,
+                                            lineNumber: 161,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/About.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 159,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/About.tsx",
-                                lineNumber: 108,
+                                lineNumber: 158,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 86,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1300,12 +1370,12 @@ function About() {
                                                             size: 24
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/About.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 189,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/About.tsx",
-                                                        lineNumber: 136,
+                                                        lineNumber: 186,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1313,13 +1383,13 @@ function About() {
                                                         children: card.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/About.tsx",
-                                                        lineNumber: 141,
+                                                        lineNumber: 191,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 185,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1327,7 +1397,7 @@ function About() {
                                                 children: card.summary
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 146,
+                                                lineNumber: 196,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1339,50 +1409,50 @@ function About() {
                                                         children: card.details
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/About.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 204,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/About.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 203,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/About.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 202,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/About.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 182,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/About.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 181,
                                     columnNumber: 15
                                 }, this)
                             }, card.title, false, {
                                 fileName: "[project]/components/sections/About.tsx",
-                                lineNumber: 130,
+                                lineNumber: 180,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/sections/About.tsx",
-                        lineNumber: 128,
+                        lineNumber: 178,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/About.tsx",
-                lineNumber: 84,
+                lineNumber: 96,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/About.tsx",
-        lineNumber: 61,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
@@ -1664,9 +1734,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar.mjs [app-ssr] (ecmascript) <export default as Calendar>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.mjs [app-ssr] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.mjs [app-ssr] (ecmascript) <export default as MapPin>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$plus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarPlus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/calendar-plus.mjs [app-ssr] (ecmascript) <export default as CalendarPlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trophy.mjs [app-ssr] (ecmascript) <export default as Trophy>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$BackgroundGlow$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/BackgroundGlow.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -1711,6 +1783,7 @@ const scheduleData = [
 ];
 function Timeline() {
     const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isOver, setIsOver] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [timeLeft, setTimeLeft] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         days: 0,
         hours: 0,
@@ -1719,12 +1792,14 @@ function Timeline() {
     });
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         setMounted(true);
+        // The moment the Hackathon started
         const targetDate = new Date("August 19, 2026 17:00:00").getTime();
         const interval = setInterval(()=>{
             const now = new Date().getTime();
             const distance = targetDate - now;
             if (distance < 0) {
                 clearInterval(interval);
+                setIsOver(true); // Triggers the UI swap
             } else {
                 setTimeLeft({
                     days: Math.floor(distance / (1000 * 60 * 60 * 24)),
@@ -1745,7 +1820,7 @@ function Timeline() {
                 position: "center"
             }, void 0, false, {
                 fileName: "[project]/components/sections/Timeline.tsx",
-                lineNumber: 80,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1759,7 +1834,7 @@ function Timeline() {
                                 children: "YOUR JOURNEY"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 86,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1768,30 +1843,73 @@ function Timeline() {
                                     "From Registration",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, this),
                                     "to Awards Night"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 89,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-400",
-                                children: "Here's what your experience at Adelaide MedTech Hackathon looks like."
+                                children: isOver ? "The 2026 MedTech Hackathon was a massive success. Check out the impact we made." : "Here's what your experience at Adelaide MedTech Hackathon looks like."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 94,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             mounted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "mt-10 flex w-full flex-col items-center gap-8",
+                                className: "mt-10 flex w-full flex-col items-center gap-8 animate-in fade-in duration-700",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid w-full grid-cols-4 gap-3 sm:flex sm:justify-center sm:gap-6",
-                                        children: [
+                                        children: isOver ? // Post-Event Stats View
+                                        [
+                                            {
+                                                label: "Hackers",
+                                                value: "140+"
+                                            },
+                                            {
+                                                label: "Projects",
+                                                value: "33"
+                                            },
+                                            {
+                                                label: "Mentors",
+                                                value: "24"
+                                            },
+                                            {
+                                                label: "Coffees",
+                                                value: "∞"
+                                            }
+                                        ].map((stat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "glass flex w-full flex-col items-center justify-center rounded-2xl border border-violet-500/20 bg-violet-500/5 py-4 shadow-lg sm:min-w-[110px] sm:px-4 sm:py-5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "font-mono text-2xl font-bold text-white sm:text-4xl",
+                                                        children: stat.value
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/Timeline.tsx",
+                                                        lineNumber: 121,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "mt-1 text-[10px] font-semibold uppercase tracking-wider text-violet-400 sm:mt-2 sm:text-xs",
+                                                        children: stat.label
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/sections/Timeline.tsx",
+                                                        lineNumber: 124,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, stat.label, true, {
+                                                fileName: "[project]/components/sections/Timeline.tsx",
+                                                lineNumber: 117,
+                                                columnNumber: 21
+                                            }, this)) : // Active Countdown View
+                                        [
                                             {
                                                 label: "Days",
                                                 value: timeLeft.days
@@ -1816,57 +1934,87 @@ function Timeline() {
                                                         children: unit.value.toString().padStart(2, "0")
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                                        lineNumber: 113,
-                                                        columnNumber: 21
+                                                        lineNumber: 141,
+                                                        columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         className: "mt-1 text-[10px] font-semibold uppercase tracking-wider text-violet-400 sm:mt-2 sm:text-xs",
                                                         children: unit.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                                        lineNumber: 116,
-                                                        columnNumber: 21
+                                                        lineNumber: 144,
+                                                        columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, unit.label, true, {
                                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                                lineNumber: 109,
-                                                columnNumber: 19
+                                                lineNumber: 137,
+                                                columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 108,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    isOver ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "#winners",
+                                        className: "group relative flex flex-col items-center overflow-hidden rounded-full border border-emerald-500/40 bg-emerald-500/10 px-8 py-3.5 text-sm font-semibold text-emerald-300 backdrop-blur-sm transition-all duration-300 hover:bg-emerald-500 hover:text-white hover:shadow-[0_0_25px_rgba(16,185,129,0.4)]",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                                    className: "h-4 w-4 transition-transform duration-300 group-hover:scale-110"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/Timeline.tsx",
+                                                    lineNumber: 159,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: "See the 2026 Winners"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/sections/Timeline.tsx",
+                                                    lineNumber: 160,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/sections/Timeline.tsx",
+                                            lineNumber: 158,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/sections/Timeline.tsx",
+                                        lineNumber: 154,
+                                        columnNumber: 17
+                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: "/calendar/hackathon-2026.ics",
                                         className: "group relative flex flex-col items-center overflow-hidden rounded-full border border-violet-500/40 bg-violet-500/10 px-6 py-3 text-sm font-semibold text-violet-300 backdrop-blur-sm transition-all duration-300 hover:bg-violet-500 hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:rounded-3xl",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center gap-2",
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2d$plus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CalendarPlus$3e$__["CalendarPlus"], {
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
                                                         className: "h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                                        lineNumber: 128,
-                                                        columnNumber: 19
+                                                        lineNumber: 169,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: "Save to Calendar"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                                        lineNumber: 129,
-                                                        columnNumber: 19
+                                                        lineNumber: 170,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                                lineNumber: 127,
-                                                columnNumber: 17
+                                                lineNumber: 168,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: " grid transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 ",
+                                                className: "grid transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "overflow-hidden",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1874,35 +2022,35 @@ function Timeline() {
                                                         children: "Save all 4 days to your calendar"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                                        lineNumber: 145,
-                                                        columnNumber: 21
+                                                        lineNumber: 175,
+                                                        columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                    lineNumber: 144,
-                                                    columnNumber: 19
+                                                    lineNumber: 174,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                                lineNumber: 132,
-                                                columnNumber: 17
+                                                lineNumber: 173,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                        lineNumber: 123,
-                                        columnNumber: 15
+                                        lineNumber: 164,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 100,
+                                lineNumber: 106,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Timeline.tsx",
-                        lineNumber: 85,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1912,7 +2060,7 @@ function Timeline() {
                                 className: "absolute bottom-0 left-6 top-0 w-[2px] bg-gradient-to-b from-violet-500 to-transparent md:left-1/2 md:-translate-x-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 158,
+                                lineNumber: 189,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1924,13 +2072,11 @@ function Timeline() {
                                                 className: "absolute left-6 top-9 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-black bg-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.6)] md:left-1/2 md:top-1/2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 200,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: `w-full pl-16 md:w-1/2 ${index % 2 === 0 ? "md:pl-0 md:pr-12 lg:pr-16" // Left side card spacing
-                                                 : "md:pl-12 md:pr-0 lg:pl-16" // Right side card spacing
-                                                }`,
+                                                className: `w-full pl-16 md:w-1/2 ${index % 2 === 0 ? "md:pl-0 md:pr-12 lg:pr-16" : "md:pl-12 md:pr-0 lg:pl-16"}`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: `glass w-full rounded-[32px] border p-6 transition duration-300 hover:-translate-y-1 sm:p-8 ${item.isFinal ? "border-violet-500 bg-violet-500/10 shadow-[0_0_30px_rgba(139,92,246,0.15)]" : "border-white/10 hover:border-violet-500/40"}`,
                                                     children: [
@@ -1942,7 +2088,7 @@ function Timeline() {
                                                                     children: item.day
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                    lineNumber: 188,
+                                                                    lineNumber: 218,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 item.isFinal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1950,13 +2096,13 @@ function Timeline() {
                                                                     children: "Final Day"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                    lineNumber: 192,
+                                                                    lineNumber: 222,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                            lineNumber: 187,
+                                                            lineNumber: 217,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1964,7 +2110,7 @@ function Timeline() {
                                                             children: item.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                            lineNumber: 198,
+                                                            lineNumber: 228,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1977,20 +2123,20 @@ function Timeline() {
                                                                             className: "h-4 w-4 shrink-0 text-violet-400"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 204,
+                                                                            lineNumber: 234,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: item.date
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 205,
+                                                                            lineNumber: 235,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                    lineNumber: 203,
+                                                                    lineNumber: 233,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2000,20 +2146,20 @@ function Timeline() {
                                                                             className: "h-4 w-4 shrink-0 text-violet-400"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 208,
+                                                                            lineNumber: 238,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             children: item.time
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 209,
+                                                                            lineNumber: 239,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                    lineNumber: 207,
+                                                                    lineNumber: 237,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2023,7 +2169,7 @@ function Timeline() {
                                                                             className: "mt-0.5 h-4 w-4 shrink-0 text-violet-400"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 212,
+                                                                            lineNumber: 242,
                                                                             columnNumber: 25
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2033,12 +2179,12 @@ function Timeline() {
                                                                                     children: item.location
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                                    lineNumber: 214,
+                                                                                    lineNumber: 244,
                                                                                     columnNumber: 27
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                                    lineNumber: 217,
+                                                                                    lineNumber: 247,
                                                                                     columnNumber: 27
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2046,65 +2192,65 @@ function Timeline() {
                                                                                     children: item.locationDetails
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                                    lineNumber: 218,
+                                                                                    lineNumber: 248,
                                                                                     columnNumber: 27
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                                            lineNumber: 213,
+                                                                            lineNumber: 243,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                                    lineNumber: 211,
+                                                                    lineNumber: 241,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/sections/Timeline.tsx",
-                                                            lineNumber: 202,
+                                                            lineNumber: 232,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/sections/Timeline.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 210,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 203,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/components/sections/Timeline.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 193,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Timeline.tsx",
-                                lineNumber: 161,
+                                lineNumber: 191,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Timeline.tsx",
-                        lineNumber: 156,
+                        lineNumber: 187,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Timeline.tsx",
-                lineNumber: 82,
+                lineNumber: 86,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Timeline.tsx",
-        lineNumber: 79,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -2321,36 +2467,112 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$Backgrou
 ;
 ;
 ;
-const winnersData = [
-    {
-        year: "2025",
-        award: "Champion",
-        project: "Medilink",
-        description: "An AI-powered clinical decision support platform helping healthcare professionals identify high-risk patients earlier.",
-        image: "/images/winners/2025-2.webp",
-        team: [
-            "Vedant Puri",
-            "Angelina Rajic",
-            "Magdalina Rajic",
-            "Kelvin Ang",
-            "Arunya Movva"
-        ]
-    },
-    {
-        year: "2025",
-        award: "Runner-Up",
-        project: "Visionary",
-        description: "Improving healthcare accessibility through an optical device paired with an intuitive digital platform allowing patients to self-monitor their eye health and connect with healthcare professionals remotely.",
-        image: "/images/winners/2025-1.webp",
-        team: [
-            "Noel Modi",
-            "Adi Polara"
-        ]
+// Data organized by year for easy scaling in the future
+const winnersData = {
+    "2026": [
+        {
+            award: "Room 1 Winner",
+            project: "Project Lisa",
+            description: "LISA (Localised Information and Support Assistant) is an application that retrieves hospital data for nurses and seamlessly connects them to experienced mentors in their area.",
+            image: "/images/winners/group21.webp",
+            team: [
+                "Vrutik Ketan Goswami",
+                "Abbie Ward"
+            ],
+            accent: "emerald"
+        },
+        {
+            award: "Room 2 Winner",
+            project: "Ergonio",
+            description: "A specialized ergonomic vest designed to prevent debilitating back pain. Targeted at physiotherapists and healthcare workers, it minimizes occupational health risks and workplace injuries.",
+            image: "/images/winners/group38.webp",
+            team: [
+                "Shaun Tojo",
+                "Muhammad Baber",
+                "Ryan Kour"
+            ],
+            accent: "teal"
+        },
+        {
+            award: "Room 3 Winner",
+            project: "Maternal Minds",
+            description: "A secure, culturally responsive digital platform dedicated to connecting immigrant mothers with vital mental health support and resources.",
+            image: "/images/winners/group31.webp",
+            team: [
+                "Tvisha Khullar",
+                "Rohma Farhan",
+                "Hadiya Roshani",
+                "Binita Gnawali",
+                "Sukhmanjot"
+            ],
+            accent: "cyan"
+        },
+        {
+            award: "Room 4 Winner",
+            project: "PulseWindow",
+            description: "A platform bridging the gap after doctors prescribe medication. It enables at-home monitoring and generates secure clinical reports, reducing workload and empowering doctors to adjust doses with confidence.",
+            image: "/images/winners/group8.webp",
+            team: [
+                "Ramsay Stratford",
+                "Siddhant Sharma",
+                "Callum Robertson",
+                "Salem Jarmakani"
+            ],
+            accent: "violet"
+        }
+    ],
+    "2025": [
+        {
+            award: "Champion",
+            project: "Medilink",
+            description: "An AI-powered clinical decision support platform helping healthcare professionals identify high-risk patients earlier.",
+            image: "/images/winners/2025-2.webp",
+            team: [
+                "Vedant Puri",
+                "Angelina Rajic",
+                "Magdalina Rajic",
+                "Kelvin Ang",
+                "Arunya Movva"
+            ],
+            accent: "emerald"
+        },
+        {
+            award: "Runner-Up",
+            project: "Visionary",
+            description: "Improving healthcare accessibility through an optical device paired with an intuitive digital platform allowing patients to self-monitor their eye health and connect with healthcare professionals remotely.",
+            image: "/images/winners/2025-1.webp",
+            team: [
+                "Noel Modi",
+                "Adi Polara"
+            ],
+            accent: "teal"
+        }
+    ]
+};
+// Helper function to map our accent colors to Tailwind classes
+const getAccentColor = (accent, isActive)=>{
+    if (!isActive) return "border-white/10 bg-white/[0.03] text-slate-400 hover:border-white/20 hover:text-white";
+    switch(accent){
+        case "teal":
+            return "border-teal-500/50 bg-teal-600 text-white shadow-[0_0_25px_rgba(20,184,166,.4)]";
+        case "cyan":
+            return "border-cyan-500/50 bg-cyan-600 text-white shadow-[0_0_25px_rgba(6,182,212,.4)]";
+        case "violet":
+            return "border-violet-500/50 bg-violet-600 text-white shadow-[0_0_25px_rgba(139,92,246,.4)]";
+        case "emerald":
+        default:
+            return "border-emerald-500/50 bg-emerald-600 text-white shadow-[0_0_25px_rgba(16,185,129,.4)]";
     }
-];
+};
 function Winners() {
+    const [activeYear, setActiveYear] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("2026");
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
-    const active = winnersData[activeIndex];
+    const currentWinners = winnersData[activeYear];
+    const active = currentWinners[activeIndex];
+    const handleYearChange = (year)=>{
+        setActiveYear(year);
+        setActiveIndex(0); // Reset to the first winner when switching years
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "winners",
         className: "relative flex w-full flex-col justify-center px-6 py-16 sm:py-24 lg:px-12",
@@ -2360,7 +2582,7 @@ function Winners() {
                 position: "center"
             }, void 0, false, {
                 fileName: "[project]/components/sections/Winners.tsx",
-                lineNumber: 43,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2371,10 +2593,10 @@ function Winners() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-3 text-sm font-semibold uppercase tracking-[0.4em] text-emerald-400",
-                                children: "Past Winners"
+                                children: "Winners"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 48,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2382,47 +2604,67 @@ function Winners() {
                                 children: "Built Here. Now Making An Impact."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 52,
+                                lineNumber: 129,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mt-4 text-base leading-7 text-slate-400 lg:text-lg",
-                                children: "Every year teams build ideas with the potential to improve healthcare. Here are the top projects from 2025."
+                                children: "Every year teams build ideas with the potential to improve healthcare. Discover the top projects shaping the future."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 56,
+                                lineNumber: 133,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Winners.tsx",
-                        lineNumber: 47,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mx-auto mt-10 flex flex-shrink-0 flex-wrap justify-center gap-4",
-                        children: winnersData.map((winner, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "mx-auto mt-12 flex space-x-2 rounded-full border border-white/10 bg-white/[0.02] p-1",
+                        children: Object.keys(winnersData).sort((a, b)=>Number(b) - Number(a)) // Sorts descending (2026, then 2025)
+                        .map((year)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>handleYearChange(year),
+                                className: `rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300 ${activeYear === year ? "bg-white/10 text-white shadow-md" : "text-slate-500 hover:text-white"}`,
+                                children: [
+                                    year,
+                                    " Cohort"
+                                ]
+                            }, year, true, {
+                                fileName: "[project]/components/sections/Winners.tsx",
+                                lineNumber: 144,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/sections/Winners.tsx",
+                        lineNumber: 140,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mx-auto mt-8 flex flex-shrink-0 flex-wrap justify-center gap-4",
+                        children: currentWinners.map((winner, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setActiveIndex(index),
-                                className: `rounded-full border px-8 py-3 text-sm font-semibold transition-all duration-300 ${index === activeIndex ? "border-emerald-500/50 bg-emerald-600 text-white shadow-[0_0_25px_rgba(16,185,129,.4)]" : "border-white/10 bg-white/[0.03] text-slate-400 hover:border-white/20 hover:text-white"}`,
+                                className: `rounded-full border px-6 py-2.5 text-sm font-semibold transition-all duration-300 ${getAccentColor(winner.accent, index === activeIndex)}`,
                                 children: winner.award
                             }, winner.award, false, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 65,
+                                lineNumber: 161,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Winners.tsx",
-                        lineNumber: 63,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative mt-12 w-full",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-emerald-600/15 via-transparent to-teal-500/10 blur-2xl"
+                                className: "absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-emerald-600/15 via-transparent to-teal-500/10 blur-2xl transition-all duration-700"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 81,
+                                lineNumber: 176,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2435,46 +2677,46 @@ function Winners() {
                                                 src: active.image,
                                                 alt: active.project,
                                                 fill: true,
-                                                className: "object-cover transition-transform duration-700 hover:scale-105"
-                                            }, void 0, false, {
+                                                className: "animate-in fade-in zoom-in-95 object-cover duration-700"
+                                            }, active.image, false, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 182,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 92,
+                                                lineNumber: 189,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "absolute bottom-6 left-6 inline-flex rounded-full bg-emerald-600 px-5 py-2 text-xs font-bold uppercase tracking-wider text-white shadow-lg",
                                                 children: [
-                                                    active.year,
+                                                    activeYear,
                                                     " ",
                                                     active.award
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 94,
+                                                lineNumber: 191,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/Winners.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-col justify-center",
+                                        className: "flex flex-col justify-center animate-in fade-in slide-in-from-right-4 duration-700",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-3xl font-bold lg:text-4xl",
                                                 children: active.project
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 100,
+                                                lineNumber: 198,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2482,7 +2724,7 @@ function Winners() {
                                                 children: active.description
                                             }, void 0, false, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 202,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2493,7 +2735,7 @@ function Winners() {
                                                         children: "Team Members"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Winners.tsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 207,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2503,48 +2745,48 @@ function Winners() {
                                                                 children: member
                                                             }, member, false, {
                                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                                lineNumber: 115,
+                                                                lineNumber: 213,
                                                                 columnNumber: 21
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Winners.tsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 211,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/sections/Winners.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 206,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/sections/Winners.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 197,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Winners.tsx",
-                                lineNumber: 83,
+                                lineNumber: 178,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Winners.tsx",
-                        lineNumber: 80,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Winners.tsx",
-                lineNumber: 45,
+                lineNumber: 122,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Winners.tsx",
-        lineNumber: 39,
+        lineNumber: 116,
         columnNumber: 5
     }, this);
 }
@@ -2924,7 +3166,7 @@ const faq = [
     },
     {
         question: "Who can participate?",
-        answer: "The Adelaide MedTech Hackathon is open to South Australian university students and senior high school students (Years 10–12). Whether you're studying medicine, engineering, business, science, design or something completely different, you're welcome."
+        answer: "The Adelaide MedTech Hackathon is open to South Australian university students and senior high school students (Years 11 & 12). Whether you're studying medicine, engineering, business, science, design or something completely different, you're welcome."
     },
     {
         question: "Is food provided?",

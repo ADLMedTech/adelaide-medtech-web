@@ -4,6 +4,7 @@ import Sponsors from "@/components/sections/Sponsors";
 import FeatureCards from "@/components/sections/FeatureCards";
 import About from "@/components/sections/About";
 import Themes from "@/components/sections/Themes";
+import Recap from "@/components/sections/Recap";
 import Timeline from "@/components/sections/Timeline";
 import Gallery from "@/components/sections/Gallery";
 import Audience from "@/components/sections/Audience";
@@ -27,14 +28,17 @@ export default function Home() {
         <Hero />
 
         {/* --- IMPORTANT NAV SECTIONS --- */}
-        <About />       {/* Needs <section id="about"> in About.tsx */}
-        <Timeline />    {/* Needs <section id="event"> in Timeline.tsx */}
-        <Themes />      {/* Needs <section id="streams"> in Themes.tsx */}
+        <About /> 
+        <Winners />      {/* Needs <section id="about"> in About.tsx */}
+        {/* Needs <section id="streams"> in Themes.tsx */}
+        <Recap />
         <Gallery />
+        <Themes /> 
+        <Timeline />  
         
         {/* --- SECONDARY INFO --- */}
 
-        <Winners />
+
 
         {/* --- MORE NAV SECTIONS --- */}
         <Team />        {/* Needs <section id="team"> in Team.tsx */}

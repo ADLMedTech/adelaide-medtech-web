@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import FadeIn from "@/components/ui/FadeIn";
 import { Lightbulb, Rocket, Users } from "lucide-react";
@@ -57,6 +58,17 @@ const cards = [
 ];
 
 export default function About() {
+  const [activeImage, setActiveImage] = useState(0);
+  // This state ensures the second image is ONLY requested from the server 
+  // after the user has explicitly clicked the button to view it.
+  const [hasLoadedSecond, setHasLoadedSecond] = useState(false);
+
+  // Added the ": number" type annotation to fix the TypeScript error
+  const handleImageSwitch = (index: number) => {
+    if (index === 1) setHasLoadedSecond(true);
+    setActiveImage(index);
+  };
+
   return (
     <section
       id="about"
@@ -86,20 +98,58 @@ export default function About() {
         <div className="flex h-full flex-col gap-4 lg:col-span-6">
           <div className="relative flex min-h-[300px] flex-1 w-full overflow-hidden rounded-[28px] border border-white/10 shadow-2xl">
             <FadeIn>
-              <div className="absolute inset-0 h-full w-full">
+              <div className="absolute inset-0 h-full w-full bg-black/20">
+                {/* Default Image */}
                 <Image
-                  src="/images/about/about.webp"
+                  src="/images/about/about2.webp"
                   alt="Students collaborating"
                   fill
                   priority
                   sizes="(max-width: 1023px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-700 hover:scale-[1.03]"
+                  className={`object-cover transition-opacity duration-700 ${
+                    activeImage === 0 ? "opacity-100" : "opacity-0"
+                  }`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+                {/* Secondary Image - Strictly lazy loaded via DOM mounting */}
+                {hasLoadedSecond && (
+                  <Image
+                    src="/images/about/about.webp"
+                    alt="Hackathon action"
+                    fill
+                    loading="lazy"
+                    sizes="(max-width: 1023px) 100vw, 50vw"
+                    className={`object-cover transition-opacity duration-700 ${
+                      activeImage === 1 ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                )}
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+                
+                {/* Dynamic Caption */}
                 <div className="absolute bottom-6 left-6">
                   <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-300">
-                    Adelaide · Late 2025
+                    {activeImage === 0 ? "Day 3 2026" : "Adelaide · Late 2025"}
                   </p>
+                </div>
+
+                {/* Image Navigation Dots */}
+                <div className="absolute bottom-6 right-6 flex gap-2">
+                  <button
+                    onClick={() => handleImageSwitch(0)}
+                    aria-label="View first image"
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      activeImage === 0 ? "w-6 bg-emerald-400" : "w-2 bg-white/40 hover:bg-white/70"
+                    }`}
+                  />
+                  <button
+                    onClick={() => handleImageSwitch(1)}
+                    aria-label="View second image"
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      activeImage === 1 ? "w-6 bg-emerald-400" : "w-2 bg-white/40 hover:bg-white/70"
+                    }`}
+                  />
                 </div>
               </div>
             </FadeIn>

@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Calendar, Clock, MapPin, CalendarPlus } from "lucide-react";
+import { Calendar, Clock, MapPin, Trophy } from "lucide-react";
 import BackgroundGlow from "@/components/ui/BackgroundGlow";
+import Link from "next/link";
 
 const scheduleData = [
   {
@@ -45,6 +46,7 @@ const scheduleData = [
 
 export default function Timeline() {
   const [mounted, setMounted] = useState(false);
+  const [isOver, setIsOver] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -54,6 +56,7 @@ export default function Timeline() {
 
   useEffect(() => {
     setMounted(true);
+    // The moment the Hackathon started
     const targetDate = new Date("August 19, 2026 17:00:00").getTime();
 
     const interval = setInterval(() => {
@@ -62,6 +65,7 @@ export default function Timeline() {
 
       if (distance < 0) {
         clearInterval(interval);
+        setIsOver(true); // Triggers the UI swap
       } else {
         setTimeLeft({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
@@ -92,72 +96,98 @@ export default function Timeline() {
             to Awards Night
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-400">
-            Here&apos;s what your experience at Adelaide MedTech Hackathon looks like.
+            {isOver 
+              ? "The 2026 MedTech Hackathon was a massive success. Check out the impact we made."
+              : "Here's what your experience at Adelaide MedTech Hackathon looks like."}
           </p>
 
-          {/* Countdown Timer */}
+          {/* Countdown / Stats UI Switcher */}
           {mounted && (
-            <div className="mt-10 flex w-full flex-col items-center gap-8">
-              {/* Changed to grid on mobile so it doesn't push off the screen */}
+            <div className="mt-10 flex w-full flex-col items-center gap-8 animate-in fade-in duration-700">
+              
               <div className="grid w-full grid-cols-4 gap-3 sm:flex sm:justify-center sm:gap-6">
-                {[
-                  { label: "Days", value: timeLeft.days },
-                  { label: "Hours", value: timeLeft.hours },
-                  { label: "Mins", value: timeLeft.minutes },
-                  { label: "Secs", value: timeLeft.seconds },
-                ].map((unit) => (
-                  <div
-                    key={unit.label}
-                    className="glass flex w-full flex-col items-center justify-center rounded-2xl border border-white/10 py-4 shadow-lg sm:min-w-[100px] sm:px-4 sm:py-5"
-                  >
-                    <span className="font-mono text-2xl font-bold text-white sm:text-4xl">
-                      {unit.value.toString().padStart(2, "0")}
-                    </span>
-                    <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-violet-400 sm:mt-2 sm:text-xs">
-                      {unit.label}
-                    </span>
-                  </div>
-                ))}
+                {isOver ? (
+                  // Post-Event Stats View
+                  [
+                    { label: "Hackers", value: "140+" },
+                    { label: "Projects", value: "33" },
+                    { label: "Mentors", value: "24" },
+                    { label: "Coffees", value: "∞" },
+                  ].map((stat) => (
+                    <div
+                      key={stat.label}
+                      className="glass flex w-full flex-col items-center justify-center rounded-2xl border border-violet-500/20 bg-violet-500/5 py-4 shadow-lg sm:min-w-[110px] sm:px-4 sm:py-5"
+                    >
+                      <span className="font-mono text-2xl font-bold text-white sm:text-4xl">
+                        {stat.value}
+                      </span>
+                      <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-violet-400 sm:mt-2 sm:text-xs">
+                        {stat.label}
+                      </span>
+                    </div>
+                  ))
+                ) : (
+                  // Active Countdown View
+                  [
+                    { label: "Days", value: timeLeft.days },
+                    { label: "Hours", value: timeLeft.hours },
+                    { label: "Mins", value: timeLeft.minutes },
+                    { label: "Secs", value: timeLeft.seconds },
+                  ].map((unit) => (
+                    <div
+                      key={unit.label}
+                      className="glass flex w-full flex-col items-center justify-center rounded-2xl border border-white/10 py-4 shadow-lg sm:min-w-[100px] sm:px-4 sm:py-5"
+                    >
+                      <span className="font-mono text-2xl font-bold text-white sm:text-4xl">
+                        {unit.value.toString().padStart(2, "0")}
+                      </span>
+                      <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-violet-400 sm:mt-2 sm:text-xs">
+                        {unit.label}
+                      </span>
+                    </div>
+                  ))
+                )}
               </div>
 
-              <a
-                href="/calendar/hackathon-2026.ics"
-                className="group relative flex flex-col items-center overflow-hidden rounded-full border border-violet-500/40 bg-violet-500/10 px-6 py-3 text-sm font-semibold text-violet-300 backdrop-blur-sm transition-all duration-300 hover:bg-violet-500 hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:rounded-3xl"
-              >
-                <div className="flex items-center gap-2">
-                  <CalendarPlus className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
-                  <span>Save to Calendar</span>
-                </div>
-
-                <div
-                  className="
-                    grid
-                    transition-all
-                    duration-300
-                    ease-out
-                    grid-rows-[0fr]
-                    opacity-0
-                    group-hover:grid-rows-[1fr]
-                    group-hover:opacity-100
-                  "
+              {/* Dynamic CTA Button */}
+              {isOver ? (
+                <Link
+                  href="#winners"
+                  className="group relative flex flex-col items-center overflow-hidden rounded-full border border-emerald-500/40 bg-emerald-500/10 px-8 py-3.5 text-sm font-semibold text-emerald-300 backdrop-blur-sm transition-all duration-300 hover:bg-emerald-500 hover:text-white hover:shadow-[0_0_25px_rgba(16,185,129,0.4)]"
                 >
-                  <div className="overflow-hidden">
-                    <p className="mt-2 text-xs font-medium text-violet-100">
-                      Save all 4 days to your calendar
-                    </p>
+                  <div className="flex items-center gap-2">
+                    <Trophy className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
+                    <span>See the 2026 Winners</span>
                   </div>
-                </div>
-              </a>
+                </Link>
+              ) : (
+                <a
+                  href="/calendar/hackathon-2026.ics"
+                  className="group relative flex flex-col items-center overflow-hidden rounded-full border border-violet-500/40 bg-violet-500/10 px-6 py-3 text-sm font-semibold text-violet-300 backdrop-blur-sm transition-all duration-300 hover:bg-violet-500 hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:rounded-3xl"
+                >
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                    <span>Save to Calendar</span>
+                  </div>
+
+                  <div className="grid transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100">
+                    <div className="overflow-hidden">
+                      <p className="mt-2 text-xs font-medium text-violet-100">
+                        Save all 4 days to your calendar
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              )}
             </div>
           )}
         </div>
 
         {/* Timeline Layout */}
         <div className="relative mx-auto w-full max-w-5xl">
-          {/* Central Timeline Line - Re-positioned to match the new padding */}
+          {/* Central Timeline Line */}
           <div className="absolute bottom-0 left-6 top-0 w-[2px] bg-gradient-to-b from-violet-500 to-transparent md:left-1/2 md:-translate-x-1/2" />
 
-          {/* Replaced fragile margins with strict gap-12 on mobile */}
           <div className="flex w-full flex-col gap-12 md:gap-0">
             {scheduleData.map((item, index) => (
               <div
@@ -169,12 +199,12 @@ export default function Timeline() {
                 {/* Center Node */}
                 <div className="absolute left-6 top-9 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-black bg-violet-500 shadow-[0_0_15px_rgba(139,92,246,0.6)] md:left-1/2 md:top-1/2" />
 
-                {/* Card Wrapper - Dynamic padding fixes the right-side cutoff on mobile and spacing on desktop */}
+                {/* Card Wrapper */}
                 <div
                   className={`w-full pl-16 md:w-1/2 ${
                     index % 2 === 0
-                      ? "md:pl-0 md:pr-12 lg:pr-16" // Left side card spacing
-                      : "md:pl-12 md:pr-0 lg:pl-16" // Right side card spacing
+                      ? "md:pl-0 md:pr-12 lg:pr-16" 
+                      : "md:pl-12 md:pr-0 lg:pl-16" 
                   }`}
                 >
                   <div

@@ -17,7 +17,7 @@ const anchorPartners = [
 
 const allSponsors = [
   {
-    name: "University of Adelaide",
+    name: "Adelaide University",
     logo: "/sponsors/uoa.webp",
   },
   {
@@ -43,6 +43,26 @@ const allSponsors = [
   {
     name: "Evolution Surgical",
     logo: "/sponsors/evosurgical.webp",
+  },
+  {
+    name: "Australian Orthopaedic Association",
+    logo: "/sponsors/aoa.webp",
+  },
+  {
+    name: "RedBull",
+    logo: "/sponsors/redbull.webp",
+  },
+  {
+    name: "FunLab",
+    logo: "/sponsors/funlab.webp",
+  },
+  {
+    name: "KiraTech",
+    logo: "/sponsors/kiratech.webp",
+  },
+  {
+    name: "Osteo-X",
+    logo: "/sponsors/osteo.webp",
   },
 ];
 

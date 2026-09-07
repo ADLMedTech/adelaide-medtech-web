@@ -12,7 +12,7 @@ export const faq = [
   {
     question: "Who can participate?",
     answer:
-      "The Adelaide MedTech Hackathon is open to South Australian university students and senior high school students (Years 10–12). Whether you're studying medicine, engineering, business, science, design or something completely different, you're welcome.",
+      "The Adelaide MedTech Hackathon is open to South Australian university students and senior high school students (Years 11 & 12). Whether you're studying medicine, engineering, business, science, design or something completely different, you're welcome.",
   },
   {
     question: "Is food provided?",

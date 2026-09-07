@@ -8,8 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   { title: "About", href: "#about" },
-  { title: "Timeline", href: "#timeline" },
-  { title: "Themes", href: "#themes" },
+  { title: "Winners", href: "#winners" },
+  { title: "Pictures", href: "#pictures" },
   { title: "Team", href: "#team" },
   { title: "FAQs", href: "#faq" },
 ];
