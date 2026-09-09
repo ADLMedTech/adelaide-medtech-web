@@ -1155,11 +1155,11 @@ const allSponsors = [
 ];
 function Sponsors() {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
-    if ($[0] !== "00249799ca7cd70ffe4c9ea02417935ee1b6bdcc2eb475f8f3c192a28b92b938") {
+    if ($[0] !== "2db311136893d6facc55962f97c91de42f4b7599d8e028ee45454a3409401ad5") {
         for(let $i = 0; $i < 11; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "00249799ca7cd70ffe4c9ea02417935ee1b6bdcc2eb475f8f3c192a28b92b938";
+        $[0] = "2db311136893d6facc55962f97c91de42f4b7599d8e028ee45454a3409401ad5";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1319,7 +1319,7 @@ function Sponsors() {
     if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
             className: "text-xl font-bold sm:text-2xl lg:text-3xl",
-            children: "Interested in Sponsoring 2026?"
+            children: "Interested in Sponsoring?"
         }, void 0, false, {
             fileName: "[project]/components/sections/Sponsors.tsx",
             lineNumber: 108,
@@ -4626,11 +4626,11 @@ const themeMap = {
 function Team() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(34);
-    if ($[0] !== "5cc59682bbe50bcd732129ceaea73172a4affb991292ea249b98594b6561511d") {
+    if ($[0] !== "e4a3a55539a79dd54ba94d5ec54d27fc7527ab946eba0688aded16a760c2b51f") {
         for(let $i = 0; $i < 34; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "5cc59682bbe50bcd732129ceaea73172a4affb991292ea249b98594b6561511d";
+        $[0] = "e4a3a55539a79dd54ba94d5ec54d27fc7527ab946eba0688aded16a760c2b51f";
     }
     const [activeGroup, setActiveGroup] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Executive");
     let t0;
@@ -4667,7 +4667,7 @@ function Team() {
         if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
             t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-violet-300 sm:mb-4 sm:text-sm sm:tracking-[0.35em]",
-                children: "Meet the Dream Team"
+                children: "Meet the 2026 Dream Team"
             }, void 0, false, {
                 fileName: "[project]/components/sections/Team.tsx",
                 lineNumber: 80,

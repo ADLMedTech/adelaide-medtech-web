@@ -164,7 +164,7 @@ export default function Sponsors() {
         {/* Sponsor CTA */}
         <div className="mx-auto mt-14 max-w-2xl rounded-[24px] border border-violet-500/30 bg-gradient-to-r from-violet-600/15 via-transparent to-purple-600/15 px-5 py-8 text-center shadow-[0_0_40px_rgba(139,92,246,0.1)] sm:mt-20 sm:rounded-[32px] sm:p-10">
           <h3 className="text-xl font-bold sm:text-2xl lg:text-3xl">
-            Interested in Sponsoring 2026?
+            Interested in Sponsoring?
           </h3>
 
           <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-300 sm:text-base">

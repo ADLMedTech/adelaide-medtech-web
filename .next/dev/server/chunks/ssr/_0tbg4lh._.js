@@ -978,7 +978,7 @@ function Sponsors() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-xl font-bold sm:text-2xl lg:text-3xl",
-                            children: "Interested in Sponsoring 2026?"
+                            children: "Interested in Sponsoring?"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Sponsors.tsx",
                             lineNumber: 166,
@@ -3413,7 +3413,7 @@ function Team() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-violet-300 sm:mb-4 sm:text-sm sm:tracking-[0.35em]",
-                                children: "Meet the Dream Team"
+                                children: "Meet the 2026 Dream Team"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Team.tsx",
                                 lineNumber: 76,

@@ -74,7 +74,7 @@ export default function Team() {
         {/* Heading */}
         <div className="flex w-full max-w-3xl flex-col items-center justify-center text-center">
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-violet-300 sm:mb-4 sm:text-sm sm:tracking-[0.35em]">
-            Meet the Dream Team
+            Meet the 2026 Dream Team
           </p>
 
           <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
